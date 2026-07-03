@@ -17,9 +17,9 @@ in `.env` is required unless you switch to Gemini/Voyage.
 
 ### Local LLM (default)
 Install [Ollama](https://ollama.com), then pull a Gemma model and confirm the tag
-matches `OLLAMA_MODEL` in `.env` (default: `gemma4:e4b` — check with `ollama list`):
+matches `OLLAMA_MODEL` in `.env` (default: `gemma4:12b-mlx` — check with `ollama list`):
 ```bash
-ollama pull gemma4:e4b
+ollama pull gemma4:12b-mlx
 ```
 
 ### Gemini (optional)

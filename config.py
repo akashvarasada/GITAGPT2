@@ -19,7 +19,7 @@ class Settings(BaseSettings):
 
     # --- LLM provider ---
     llm_provider: str = "local"          # "local" | "gemini"
-    ollama_model: str = "gemma4:e4b"
+    ollama_model: str = "gemma4:12b-mlx"  # model name used in the Ollama API in mac
     ollama_display: str = "Gemma 4"      # human-readable label shown in the UI
     ollama_base_url: str = "http://localhost:11434"
     gemini_model: str = "gemini-3-flash-preview"

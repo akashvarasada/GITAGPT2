@@ -59,7 +59,7 @@ def build_graph(retriever: HybridRetriever):
             SystemMessage(content=prompts.REWRITE_SYSTEM),
             HumanMessage(content=state["question"]),
         ])
-        return {"query": msg.content.strip(), "tries": state.get("tries", 0) + 1}
+        return {"query": msg.text.strip(), "tries": state.get("tries", 0) + 1}
 
     def finalize(state: RagState) -> RagState:
         return {"context": prompts.format_context(state.get("documents", []))}

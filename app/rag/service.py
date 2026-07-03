@@ -52,7 +52,7 @@ class RagService:
 
         messages, docs = self.prepare(question, provider, api_key, model, filter)
         llm = get_llm(provider, api_key, model)
-        text = llm.invoke(messages).content
+        text = llm.invoke(messages).text
         return {
             "answer": text,
             "sources": _sources(docs),
@@ -66,8 +66,11 @@ class RagService:
         messages, docs = self.prepare(question, provider, api_key, model, filter)
         llm = get_llm(provider, api_key, model)
         for chunk in llm.stream(messages):
-            if chunk.content:
-                yield {"type": "token", "text": chunk.content}
+            # chunk.content can be a plain string or a list of content blocks
+            # (LangChain 1.x); .text normalizes either shape to plain text.
+            text = chunk.text
+            if text:
+                yield {"type": "token", "text": text}
         yield {"type": "sources", "sources": _sources(docs)}
 
     # -- guards ------------------------------------------------------------
@@ -92,3 +95,4 @@ def _sources(docs) -> list[dict]:
          "page": d.metadata.get("page")}
         for d in docs
     ]
+
