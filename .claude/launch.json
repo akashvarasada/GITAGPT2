@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gitagpt",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "uvicorn", "app.api.main:app", "--reload",
+                     "--reload-dir", "app", "--port", "8000"],
+      "port": 8000
+    }
+  ]
+}

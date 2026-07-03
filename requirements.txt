@@ -1,0 +1,41 @@
+# --- Core orchestration ---
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langgraph>=0.2.0
+
+# --- LLM providers (pluggable) ---
+langchain-google-genai>=2.0.0      # Gemini
+langchain-ollama>=0.2.0            # local Gemma via Ollama
+
+# --- Embeddings ---
+langchain-huggingface>=0.1.0       # default: BAAI/bge-m3
+sentence-transformers>=3.0.0       # embeddings + cross-encoder reranker
+# langchain-voyageai>=0.1.0        # opt-in hosted embeddings (uncomment to use)
+
+# --- Vector store ---
+langchain-chroma>=0.1.4
+chromadb>=0.5.0
+
+# --- Retrieval ---
+rank-bm25>=0.2.2                   # BM25 keyword retriever for hybrid search
+
+# --- Ingestion / parsing ---
+pymupdf4llm>=0.0.17                # PDF -> Markdown (structure-preserving)
+pymupdf>=1.24.0
+# unstructured[pdf]>=0.15.0        # opt-in: layout-aware parsing for messy/scanned PDFs
+# pytesseract>=0.3.10              # opt-in: OCR for scanned PDFs
+
+# --- API / UI ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+jinja2>=3.1.0
+sse-starlette>=2.1.0
+python-multipart>=0.0.9           # form parsing for /config
+pydantic-settings>=2.4.0
+python-dotenv>=1.0.0
+
+# --- Evaluation (opt-in) ---
+# ragas>=0.2.0
+# langsmith>=0.1.0
