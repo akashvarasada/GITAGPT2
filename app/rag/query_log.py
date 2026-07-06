@@ -49,6 +49,8 @@ def _print_summary(r: dict) -> None:
     line = (
         f"[query] {r.get('provider')}/{r.get('model')} "
         f"retrieval={_fmt(r.get('retrieval_s'), 's')} "
+        f"(dense={_fmt(r.get('dense_s'), 's')} bm25={_fmt(r.get('bm25_s'), 's')} "
+        f"rerank={_fmt(r.get('rerank_s'), 's')} on {r.get('device')}) "
         f"total={_fmt(r.get('total_s'), 's')} "
         f"tokens={r.get('prompt_tokens')}+{r.get('completion_tokens')} "
         f"prefill={_fmt(r.get('prefill_tok_per_s'))} tok/s "

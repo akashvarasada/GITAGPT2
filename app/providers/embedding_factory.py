@@ -22,8 +22,13 @@ def get_embeddings(provider: str | None = None,
     if provider == "local":
         from langchain_huggingface import HuggingFaceEmbeddings
 
+        from app.providers.device import get_device
+
+        # Pin the device (mps on Apple Silicon, cuda if present, else cpu) instead
+        # of relying on auto-detection -- same weights + math, just faster hardware.
         return HuggingFaceEmbeddings(
             model_name=model or settings.embed_model,
+            model_kwargs={"device": get_device()},
             encode_kwargs={"normalize_embeddings": True},
         )
 

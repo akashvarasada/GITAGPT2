@@ -10,6 +10,7 @@ citable context string; generation/streaming happens in service.py.
 """
 from __future__ import annotations
 
+import time
 from typing import TypedDict
 
 from langchain_core.documents import Document
@@ -30,6 +31,7 @@ class RagState(TypedDict, total=False):
     context: str
     tries: int
     relevant: bool
+    timings: dict              # per-stage seconds (dense/bm25/rerank), for profiling
 
     # NOTE: the API key is deliberately NOT part of the state. State becomes the
     # traced `inputs` of every step (local AND cloud tracers), so putting secrets
@@ -40,16 +42,29 @@ def build_graph(retriever: HybridRetriever):
     """Compile the retrieval graph bound to a HybridRetriever."""
 
     def retrieve(state: RagState) -> RagState:
-        candidates = retriever.retrieve(state["query"], filter=state.get("filter"))
+        timings: dict = {}
+        candidates = retriever.retrieve(state["query"], filter=state.get("filter"),
+                                        timings=timings)
+        t0 = time.perf_counter()
         scored = rerank(state["query"], candidates, settings.top_k)
+        timings["rerank_s"] = round(time.perf_counter() - t0, 3)
+        timings["candidates"] = len(candidates)
+        # A rewrite retry runs this node twice; sum so `timings` reflects total work.
+        prev = state.get("timings") or {}
+        for key in ("dense_s", "bm25_s", "rerank_s"):
+            timings[key] = round(prev.get(key, 0) + timings.get(key, 0), 3)
         best = scored[0][1] if scored else float("-inf")
         return {
             "documents": [d for d, _ in scored],
             "relevant": best >= settings.rerank_relevance_threshold,
+            "timings": timings,
         }
 
     def decide(state: RagState) -> str:
-        if state.get("relevant") or state.get("tries", 0) >= 1:
+        # enable_rewrite off -> never fire the blocking in-graph LLM rewrite.
+        if (not settings.enable_rewrite
+                or state.get("relevant")
+                or state.get("tries", 0) >= 1):
             return "finalize"
         return "rewrite"
 

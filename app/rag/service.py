@@ -27,6 +27,14 @@ class RagService:
         self._retriever = HybridRetriever(store)
         self._graph = build_graph(self._retriever)
 
+    def warmup(self) -> None:
+        """Run one tiny retrieve+rerank to trigger model loads and MPS kernel
+        compilation at startup, so the first real query doesn't pay that cost."""
+        from app.rag.reranker import rerank
+
+        docs = self._retriever.retrieve("warmup")
+        rerank("warmup", docs[:5], 5)
+
     # -- retrieval + prompt assembly ---------------------------------------
     def prepare(self, question, llm, filter=None, callbacks=None):
         # The LLM is passed via config (for the rewrite node) -- NOT via state --
@@ -46,14 +54,14 @@ class RagService:
             HumanMessage(content=prompts.ANSWER_USER.format(
                 context=state.get("context", ""), question=question)),
         ]
-        return messages, docs
+        return messages, docs, state.get("timings", {})
 
     # -- generation --------------------------------------------------------
     def answer(self, question, provider=None, api_key=None, model=None, filter=None):
         from app.providers.llm_factory import get_llm
 
         llm = get_llm(provider, api_key, model)
-        messages, docs = self.prepare(question, llm, filter)
+        messages, docs, _timings = self.prepare(question, llm, filter)
         text = llm.invoke(messages).text
         return {
             "answer": text,
@@ -77,7 +85,7 @@ class RagService:
         llm = get_llm(provider, api_key, model)   # built once, reused by graph + generation
 
         t0 = time.perf_counter()
-        messages, docs = self.prepare(question, llm, filter, callbacks=[tracer])
+        messages, docs, timings = self.prepare(question, llm, filter, callbacks=[tracer])
         t_retrieved = time.perf_counter()
 
         first_token_t = None
@@ -104,14 +112,14 @@ class RagService:
         from app.rag.local_tracer import write_trace
 
         record = self._log(log_query, question, provider, llm, docs, parts,
-                            t0, t_retrieved, first_token_t, t_end, usage, meta)
+                            t0, t_retrieved, first_token_t, t_end, usage, meta, timings)
         # Unified per-query trace: summary metrics + full span tree, one line.
         write_trace(tracer.query_id, record, tracer.roots)
         yield {"type": "sources", "sources": _sources(docs)}
 
     @staticmethod
     def _log(log_query, question, provider, llm, docs, parts,
-             t0, t_retrieved, first_token_t, t_end, usage, meta):
+             t0, t_retrieved, first_token_t, t_end, usage, meta, timings=None):
         prompt_tokens = usage.get("input_tokens") or meta.get("prompt_eval_count")
         completion_tokens = usage.get("output_tokens") or meta.get("eval_count")
 
@@ -135,11 +143,20 @@ class RagService:
         prefill_tok_per_s = (prompt_tokens / prefill_basis) if (prompt_tokens and prefill_basis) else None
         decode_tok_per_s = (completion_tokens / decode_basis) if (completion_tokens and decode_basis) else None
 
+        from app.providers.device import get_device
+
+        timings = timings or {}
         record = {
             "question": question,
             "provider": provider,
             "model": getattr(llm, "model", None),
             "retrieval_s": round(t_retrieved - t0, 2),
+            # Retrieval sub-stage breakdown (seconds) -- pinpoints embed vs rerank.
+            "device": get_device(),
+            "dense_s": timings.get("dense_s"),
+            "bm25_s": timings.get("bm25_s"),
+            "rerank_s": timings.get("rerank_s"),
+            "candidates": timings.get("candidates"),
             "prefill_s": round(prefill, 2) if prefill else None,
             "decode_s": round(decode, 2) if decode else None,
             "generation_s": round(t_end - t_retrieved, 2),

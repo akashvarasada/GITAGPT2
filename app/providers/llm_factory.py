@@ -29,11 +29,20 @@ def get_llm(provider: str | None = None,
         key = api_key or settings.google_api_key
         if not key:
             raise ValueError("Gemini selected but no API key provided.")
-        return ChatGoogleGenerativeAI(
-            model=model or settings.gemini_model,
-            google_api_key=key,
-            temperature=0.2,
-        )
+        kwargs: dict = {
+            "model": model or settings.gemini_model,
+            "google_api_key": key,
+            "temperature": 0.2,
+            "max_retries": settings.gemini_max_retries,
+        }
+        safety = _gemini_safety_settings()
+        if safety:
+            kwargs["safety_settings"] = safety
+        if settings.gemini_thinking_budget is not None:
+            kwargs["thinking_budget"] = settings.gemini_thinking_budget
+        if settings.gemini_max_output_tokens is not None:
+            kwargs["max_output_tokens"] = settings.gemini_max_output_tokens
+        return ChatGoogleGenerativeAI(**kwargs)
 
     if provider == "local":
         from langchain_ollama import ChatOllama
@@ -41,13 +50,37 @@ def get_llm(provider: str | None = None,
         name = model or settings.ollama_model
         if not name or name.lower() == "auto":
             name = resolve_ollama_model()
-        return ChatOllama(
-            model=name,
-            base_url=settings.ollama_base_url,
-            temperature=0.2,
-        )
+        kwargs = {
+            "model": name,
+            "base_url": settings.ollama_base_url,
+            "temperature": 0.2,
+            "keep_alive": settings.ollama_keep_alive,   # keep model warm between queries
+        }
+        if settings.ollama_num_ctx is not None:
+            kwargs["num_ctx"] = settings.ollama_num_ctx
+        if settings.ollama_num_predict is not None:
+            kwargs["num_predict"] = settings.ollama_num_predict
+        return ChatOllama(**kwargs)
 
     raise ValueError(f"Unknown LLM provider: {provider!r} (use 'local' or 'gemini').")
+
+
+def _gemini_safety_settings():
+    """Relax safety filters so scripture (war, killing kinsmen) isn't falsely
+    refused. Returns None (Google defaults) when settings.gemini_safety != 'relaxed'
+    or the enums can't be imported. See config.gemini_safety."""
+    if settings.gemini_safety != "relaxed":
+        return None
+    try:
+        from langchain_google_genai import HarmBlockThreshold, HarmCategory
+    except Exception:
+        return None
+    return {
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+    }
 
 
 # --------------------------------------------------------------------------- #

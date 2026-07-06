@@ -17,7 +17,11 @@ def _get_model():
     if _model is None:
         from sentence_transformers import CrossEncoder
 
-        _model = CrossEncoder(settings.reranker_model)
+        from app.providers.device import get_device
+
+        # Reranking scores ~40 candidates per query -- the single most GPU-bound
+        # step in retrieval. Pin the device so it doesn't silently run on CPU.
+        _model = CrossEncoder(settings.reranker_model, device=get_device())
     return _model
 
 
