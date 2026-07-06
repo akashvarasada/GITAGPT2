@@ -1,0 +1,1746 @@
+[
+  {
+    "name": "ChatOllama",
+    "run_type": "llm",
+    "start_time": "2026-07-06T12:53:27.372963+00:00",
+    "latency_s": 328.917549,
+    "total_tokens": 2506,
+    "prompt_tokens": 1639,
+    "completion_tokens": 867,
+    "prefill_tok_per_s": 22.52,
+    "decode_tok_per_s": 3.72,
+    "error": null,
+    "inputs": {
+      "messages": [
+        [
+          {
+            "id": [
+              "langchain",
+              "schema",
+              "messages",
+              "SystemMessage"
+            ],
+            "kwargs": {
+              "content": "You are GITAGPT, a study assistant for the Bhagavad-gita As It Is.\n\nRules:\n- Answer ONLY using the provided context passages. Do not use outside knowledge.\n- Cite the verses you rely on in the form (BG chapter.verse), e.g. (BG 2.47).\n- If the context does not contain the answer, say exactly:\n  \"This is not addressed in the provided text.\"\n- Be clear and faithful to the text; do not invent teachings or verse numbers.\n",
+              "type": "system"
+            },
+            "lc": 1,
+            "type": "constructor"
+          },
+          {
+            "id": [
+              "langchain",
+              "schema",
+              "messages",
+              "HumanMessage"
+            ],
+            "kwargs": {
+              "content": "Context passages:\n[1] (BG 12.17)\nBG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.\n\n[2] (BG 12.16)\nBG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.\n\n[3] (BG 8.1)\nBG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.\n\n[4] (BG 10.7)\nBG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.\n\n[5] (BG 17.11)\nBG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead.\n\nQuestion: What is devotion?\n\nAnswer (with verse citations):",
+              "type": "human"
+            },
+            "lc": 1,
+            "type": "constructor"
+          }
+        ]
+      ]
+    },
+    "outputs": {
+      "generations": [
+        [
+          {
+            "generation_info": {
+              "created_at": "2026-07-06T12:58:56.2848476Z",
+              "done": true,
+              "done_reason": "stop",
+              "eval_count": 867,
+              "eval_duration": 232768139000,
+              "load_duration": 23294483100,
+              "logprobs": null,
+              "model": "gemma4:e4b",
+              "model_name": "gemma4:e4b",
+              "model_provider": "ollama",
+              "prompt_eval_count": 1639,
+              "prompt_eval_duration": 72780441000,
+              "total_duration": 328892043500
+            },
+            "message": {
+              "id": [
+                "langchain",
+                "schema",
+                "messages",
+                "AIMessageChunk"
+              ],
+              "kwargs": {
+                "content": "Devotion involves engaging in unalloyed devotional service after knowing the truth of the glory and power of God (BG 10.7).\n\nA devotee who engages in this service exhibits several characteristics:\n\n*   **Emotional Detachment:** Such a person neither grasps pleasure or grief, nor does he lament or desire; furthermore, he renounces both auspicious and inauspicious things (BG 12.17).\n*   **Mental State:** A devotee who is pure, expert, without cares, free from all pains, and does not strive for any result is dear to the Lord (BG 12.16).\n*   **Transcendence:** The pure devotee is transcendental in the face of all kinds of auspicious, inauspicious, and sinful activities (BG 12.17 Purport).\n\nAdditionally, one who knows the opulences of the Supreme Lord becomes a surrendered soul and engages himself in devotional service (BG 10.7 Purport).",
+                "id": "lc_run--019f377d-9ecc-7121-ad34-e8b40ad32f41",
+                "invalid_tool_calls": [],
+                "response_metadata": {
+                  "created_at": "2026-07-06T12:58:56.2848476Z",
+                  "done": true,
+                  "done_reason": "stop",
+                  "eval_count": 867,
+                  "eval_duration": 232768139000,
+                  "load_duration": 23294483100,
+                  "logprobs": null,
+                  "model": "gemma4:e4b",
+                  "model_name": "gemma4:e4b",
+                  "model_provider": "ollama",
+                  "prompt_eval_count": 1639,
+                  "prompt_eval_duration": 72780441000,
+                  "total_duration": 328892043500
+                },
+                "tool_calls": [],
+                "type": "AIMessageChunk",
+                "usage_metadata": {
+                  "input_tokens": 1639,
+                  "output_tokens": 867,
+                  "total_tokens": 2506
+                }
+              },
+              "lc": 1,
+              "type": "constructor"
+            },
+            "text": "Devotion involves engaging in unalloyed devotional service after knowing the truth of the glory and power of God (BG 10.7).\n\nA devotee who engages in this service exhibits several characteristics:\n\n*   **Emotional Detachment:** Such a person neither grasps pleasure or grief, nor does he lament or desire; furthermore, he renounces both auspicious and inauspicious things (BG 12.17).\n*   **Mental State:** A devotee who is pure, expert, without cares, free from all pains, and does not strive for any result is dear to the Lord (BG 12.16).\n*   **Transcendence:** The pure devotee is transcendental in the face of all kinds of auspicious, inauspicious, and sinful activities (BG 12.17 Purport).\n\nAdditionally, one who knows the opulences of the Supreme Lord becomes a surrendered soul and engages himself in devotional service (BG 10.7 Purport).",
+            "type": "ChatGenerationChunk"
+          }
+        ]
+      ],
+      "llm_output": null,
+      "run": null,
+      "type": "LLMResult"
+    },
+    "trace_id": "019f377d-9ecc-7121-ad34-e8b40ad32f41",
+    "parent_run_id": null
+  },
+  {
+    "name": "finalize",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:53:23.429768+00:00",
+    "latency_s": 0.000536,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "documents": [
+        {
+          "id": "b7efeed7-b251-4e4a-bd81-2b26f3e572fb",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 655,
+            "reference": "BG 12.17",
+            "section": "12.17",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "17"
+          },
+          "page_content": "BG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.",
+          "type": "Document"
+        },
+        {
+          "id": "a0785053-5d11-491d-beae-08c9f13dfb1b",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 654,
+            "reference": "BG 12.16",
+            "section": "12.16",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "16"
+          },
+          "page_content": "BG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 8,
+            "doc_type": "gita",
+            "page": 436,
+            "reference": "BG 8.1",
+            "section": "8.1",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Attaining the Supreme",
+            "type": "verse",
+            "verse": "1"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "id": "8fcbc5b7-63a2-40b1-a299-c6e0663e3ddc",
+          "metadata": {
+            "chapter": 10,
+            "doc_type": "gita",
+            "page": 535,
+            "reference": "BG 10.7",
+            "section": "10.7",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Opulence of the Absolute",
+            "type": "verse",
+            "verse": "7"
+          },
+          "page_content": "BG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.",
+          "type": "Document"
+        },
+        {
+          "id": "f59c4cdc-5eed-48c0-9c87-424849b28f42",
+          "metadata": {
+            "chapter": 17,
+            "doc_type": "gita",
+            "page": 809,
+            "reference": "BG 17.11",
+            "section": "17.11",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Divisions of Faith",
+            "type": "verse",
+            "verse": "11"
+          },
+          "page_content": "BG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead.",
+          "type": "Document"
+        }
+      ],
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is devotion?",
+      "question": "What is devotion?",
+      "relevant": true,
+      "tries": 0
+    },
+    "outputs": {
+      "context": "[1] (BG 12.17)\nBG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.\n\n[2] (BG 12.16)\nBG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.\n\n[3] (BG 8.1)\nBG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.\n\n[4] (BG 10.7)\nBG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.\n\n[5] (BG 17.11)\nBG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead."
+    },
+    "trace_id": "019f377d-509b-7070-a53d-2f057c948661",
+    "parent_run_id": "019f377d-509b-7070-a53d-2f057c948661"
+  },
+  {
+    "name": "decide",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:53:23.423610+00:00",
+    "latency_s": 0.004634,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "documents": [
+        {
+          "id": "b7efeed7-b251-4e4a-bd81-2b26f3e572fb",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 655,
+            "reference": "BG 12.17",
+            "section": "12.17",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "17"
+          },
+          "page_content": "BG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.",
+          "type": "Document"
+        },
+        {
+          "id": "a0785053-5d11-491d-beae-08c9f13dfb1b",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 654,
+            "reference": "BG 12.16",
+            "section": "12.16",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "16"
+          },
+          "page_content": "BG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 8,
+            "doc_type": "gita",
+            "page": 436,
+            "reference": "BG 8.1",
+            "section": "8.1",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Attaining the Supreme",
+            "type": "verse",
+            "verse": "1"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "id": "8fcbc5b7-63a2-40b1-a299-c6e0663e3ddc",
+          "metadata": {
+            "chapter": 10,
+            "doc_type": "gita",
+            "page": 535,
+            "reference": "BG 10.7",
+            "section": "10.7",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Opulence of the Absolute",
+            "type": "verse",
+            "verse": "7"
+          },
+          "page_content": "BG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.",
+          "type": "Document"
+        },
+        {
+          "id": "f59c4cdc-5eed-48c0-9c87-424849b28f42",
+          "metadata": {
+            "chapter": 17,
+            "doc_type": "gita",
+            "page": 809,
+            "reference": "BG 17.11",
+            "section": "17.11",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Divisions of Faith",
+            "type": "verse",
+            "verse": "11"
+          },
+          "page_content": "BG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead.",
+          "type": "Document"
+        }
+      ],
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is devotion?",
+      "question": "What is devotion?",
+      "relevant": true,
+      "tries": 0
+    },
+    "outputs": {
+      "output": "finalize"
+    },
+    "trace_id": "019f377d-509b-7070-a53d-2f057c948661",
+    "parent_run_id": "019f377d-528f-7dc0-b1a2-1bce9f14d685"
+  },
+  {
+    "name": "BM25Retriever",
+    "run_type": "retriever",
+    "start_time": "2026-07-06T12:53:08.121662+00:00",
+    "latency_s": 0.002726,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "query": "What is devotion?"
+    },
+    "outputs": {
+      "documents": [
+        {
+          "metadata": {
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "verse": "1",
+            "title": "Attaining the Supreme",
+            "reference": "BG 8.1",
+            "doc_type": "gita",
+            "section": "8.1",
+            "chapter": 8,
+            "page": 436,
+            "type": "verse"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "section": "8.1",
+            "verse": "1",
+            "reference": "BG 8.1",
+            "doc_type": "gita",
+            "chapter": 8,
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "page": 436,
+            "title": "Attaining the Supreme"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "40",
+            "title": "The Opulence of the Absolute",
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "doc_type": "gita",
+            "chapter": 10,
+            "reference": "BG 10.40",
+            "page": 572,
+            "section": "10.40"
+          },
+          "page_content": "BG 10.40 (The Opulence of the Absolute)\n\nTRANSLATION: O mighty conqueror of enemies, there is no end to My divine manifestations. What I have spoken to you is but a mere indication of My infinite opulences.\n\nPURPORT: As stated in the Vedic literature, although the opulences and energies of\nthe Supreme are understood in various ways, there is no limit to such\nopulences; therefore not all the opulences and energies can be explained.\nSimply a few examples are being described to Arjuna to pacify his\ninquisitiveness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "page": 572,
+            "verse": "40",
+            "reference": "BG 10.40",
+            "chapter": 10,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "doc_type": "gita",
+            "section": "10.40",
+            "type": "verse",
+            "title": "The Opulence of the Absolute"
+          },
+          "page_content": "BG 10.40 (The Opulence of the Absolute)\n\nTRANSLATION: O mighty conqueror of enemies, there is no end to My divine manifestations. What I have spoken to you is but a mere indication of My infinite opulences.\n\nPURPORT: As stated in the Vedic literature, although the opulences and energies of\nthe Supreme are understood in various ways, there is no limit to such\nopulences; therefore not all the opulences and energies can be explained.\nSimply a few examples are being described to Arjuna to pacify his\ninquisitiveness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "reference": "BG 6.26",
+            "chapter": 6,
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "verse": "26",
+            "doc_type": "gita",
+            "section": "6.26",
+            "page": 357
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "page": 357,
+            "section": "6.26",
+            "doc_type": "gita",
+            "reference": "BG 6.26",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "chapter": 6,
+            "verse": "26"
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "64",
+            "page": 884,
+            "section": "18.64",
+            "chapter": 18,
+            "title": "Conclusion\u2014The Perfection of Renunciation",
+            "doc_type": "gita",
+            "type": "verse",
+            "reference": "BG 18.64",
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 18.64 (Conclusion\u2014The Perfection of Renunciation)\n\nTRANSLATION: Because you are My very dear friend, I am speaking to you the most confidential part of knowledge. Hear this from Me, for it is for your benefit.\n\nPURPORT: The Lord has given Arjuna confidential knowledge of the Supersoul within\neveryone\u2019s heart, and now He is giving the most confidential part of this\nknowledge: just surrender unto the Supreme Personality of Godhead. At the\nend of the Ninth Chapter He has said, \u201cJust always think of Me.\u201d The same\ninstruction is repeated here to stress the essence of the teachings of Bhagavad-\ng\u00e9t\u00e4. This essence is not understood by a common man, but by one who is\nactually very dear to K\u00e5\u00f1\u00eba, a pure devotee of K\u00e5\u00f1\u00eba. This is the most\nimportant instruction in all Vedic literature. What K\u00e5\u00f1\u00eba is saying in this\nconnection is the most essential part of knowledge, and it should be carried\nout not only by Arjuna but by all living entities.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "section": "18.64",
+            "page": 884,
+            "doc_type": "gita",
+            "verse": "64",
+            "type": "verse",
+            "chapter": 18,
+            "reference": "BG 18.64",
+            "title": "Conclusion\u2014The Perfection of Renunciation",
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 18.64 (Conclusion\u2014The Perfection of Renunciation)\n\nTRANSLATION: Because you are My very dear friend, I am speaking to you the most confidential part of knowledge. Hear this from Me, for it is for your benefit.\n\nPURPORT: The Lord has given Arjuna confidential knowledge of the Supersoul within\neveryone\u2019s heart, and now He is giving the most confidential part of this\nknowledge: just surrender unto the Supreme Personality of Godhead. At the\nend of the Ninth Chapter He has said, \u201cJust always think of Me.\u201d The same\ninstruction is repeated here to stress the essence of the teachings of Bhagavad-\ng\u00e9t\u00e4. This essence is not understood by a common man, but by one who is\nactually very dear to K\u00e5\u00f1\u00eba, a pure devotee of K\u00e5\u00f1\u00eba. This is the most\nimportant instruction in all Vedic literature. What K\u00e5\u00f1\u00eba is saying in this\nconnection is the most essential part of knowledge, and it should be carried\nout not only by Arjuna but by all living entities.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "19",
+            "section": "2.19",
+            "reference": "BG 2.19",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "doc_type": "gita",
+            "type": "verse",
+            "page": 109,
+            "chapter": 2
+          },
+          "page_content": "BG 2.19 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: He who thinks that the living entity is the slayer or that he is slain, does not understand. One who is in knowledge knows that the self slays not nor is slain.\n\nPURPORT: When an embodied living entity is hurt by fatal weapons, it is to be known\nthat the living entity within the body is not killed. The spirit soul is so small\nthat it is impossible to kill him by any material weapon, as is evident from the\nprevious verses. Nor is the living entity killable because of his spiritual\nconstitution. What is killed, or is supposed to be killed, is the body only. This,\nhowever, does not at all encourage killing of the body. The Vedic injunction\nis, \u201cm\u00e4hi\u00e0sy\u00e4t sarva-bh\u00fct\u00e4ni\u201d never commit violence to anyone. Nor does\nunderstanding that the living entity is not killed encourage animal slaughter.\nKilling the body of anyone without authority is abominable and is punishable\nby the law of the state as well as by the law of the Lord. Arjuna, however, is\nbeing engaged in killing for the principle of religion, and not whimsically.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "reference": "BG 2.19",
+            "section": "2.19",
+            "chapter": 2,
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "verse": "19",
+            "doc_type": "gita",
+            "page": 109,
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 2.19 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: He who thinks that the living entity is the slayer or that he is slain, does not understand. One who is in knowledge knows that the self slays not nor is slain.\n\nPURPORT: When an embodied living entity is hurt by fatal weapons, it is to be known\nthat the living entity within the body is not killed. The spirit soul is so small\nthat it is impossible to kill him by any material weapon, as is evident from the\nprevious verses. Nor is the living entity killable because of his spiritual\nconstitution. What is killed, or is supposed to be killed, is the body only. This,\nhowever, does not at all encourage killing of the body. The Vedic injunction\nis, \u201cm\u00e4hi\u00e0sy\u00e4t sarva-bh\u00fct\u00e4ni\u201d never commit violence to anyone. Nor does\nunderstanding that the living entity is not killed encourage animal slaughter.\nKilling the body of anyone without authority is abominable and is punishable\nby the law of the state as well as by the law of the Lord. Arjuna, however, is\nbeing engaged in killing for the principle of religion, and not whimsically.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "section": "2.69",
+            "verse": "69",
+            "reference": "BG 2.69",
+            "chapter": 2,
+            "doc_type": "gita",
+            "page": 170,
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 2.69 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: What is night for all beings is the time of awakening for the self-controlled; and the time of awakening for all beings is night for the introspective sage.\n\nPURPORT: There are two classes of intelligent men. The one is intelligent in material\nactivities for sense gratification, and the other is introspective and awake to\nthe cultivation of self-realization. Activities of the introspective sage, or\nthoughtful man, are night for persons materially absorbed. Materialistic\npersons remain asleep in such a night due to their ignorance of self-realization.\nThe introspective sage remains alert in the \u201cnight\u201d of the materialistic men.\nThe sage feels transcendental pleasure in the gradual advancement of spiritual\nculture, whereas the man in materialistic activities, being asleep to self-\nrealization, dreams of varieties of sense pleasure, feeling sometimes happy and\nsometimes distressed in his sleeping condition. The introspective man is\nalways indifferent to materialistic happiness and distress. He goes on with his\nself-realization activities undisturbed by material reaction.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "page": 170,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "section": "2.69",
+            "verse": "69",
+            "doc_type": "gita",
+            "type": "verse",
+            "reference": "BG 2.69",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "chapter": 2
+          },
+          "page_content": "BG 2.69 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: What is night for all beings is the time of awakening for the self-controlled; and the time of awakening for all beings is night for the introspective sage.\n\nPURPORT: There are two classes of intelligent men. The one is intelligent in material\nactivities for sense gratification, and the other is introspective and awake to\nthe cultivation of self-realization. Activities of the introspective sage, or\nthoughtful man, are night for persons materially absorbed. Materialistic\npersons remain asleep in such a night due to their ignorance of self-realization.\nThe introspective sage remains alert in the \u201cnight\u201d of the materialistic men.\nThe sage feels transcendental pleasure in the gradual advancement of spiritual\nculture, whereas the man in materialistic activities, being asleep to self-\nrealization, dreams of varieties of sense pleasure, feeling sometimes happy and\nsometimes distressed in his sleeping condition. The introspective man is\nalways indifferent to materialistic happiness and distress. He goes on with his\nself-realization activities undisturbed by material reaction.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "doc_type": "gita",
+            "chapter": 14,
+            "section": "14.21",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "type": "verse",
+            "title": "The Three Modes of Material Nature",
+            "page": 728,
+            "reference": "BG 14.21",
+            "verse": "21"
+          },
+          "page_content": "BG 14.21 (The Three Modes of Material Nature)\n\nTRANSLATION: Arjuna inquired: O my dear Lord, by what symptoms is one known who is transcendental to those modes? What is his behavior? And how does he transcend the modes of nature?\n\nPURPORT: In this verse, Arjuna\u2019s questions are very appropriate. He wants to know\nthe symptoms of a person who has already transcended the material modes. He\nfirst inquires of the symptoms of such a transcendental person. How can one\nunderstand that he has already transcended the influence of the modes of\nmaterial nature? The second question asks how he lives and what his activities\nare. Are they regulated or nonregulated? Then Arjuna inquires of the means\nby which he can attain the transcendental nature. That is very important.\nUnless one knows the direct means by which one can be situated always\ntranscendentally, there is no possibility of showing the symptoms. So all these\nquestions put by Arjuna are very important, and the Lord answers them.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "reference": "BG 14.21",
+            "title": "The Three Modes of Material Nature",
+            "type": "verse",
+            "doc_type": "gita",
+            "page": 728,
+            "verse": "21",
+            "section": "14.21",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "chapter": 14
+          },
+          "page_content": "BG 14.21 (The Three Modes of Material Nature)\n\nTRANSLATION: Arjuna inquired: O my dear Lord, by what symptoms is one known who is transcendental to those modes? What is his behavior? And how does he transcend the modes of nature?\n\nPURPORT: In this verse, Arjuna\u2019s questions are very appropriate. He wants to know\nthe symptoms of a person who has already transcended the material modes. He\nfirst inquires of the symptoms of such a transcendental person. How can one\nunderstand that he has already transcended the influence of the modes of\nmaterial nature? The second question asks how he lives and what his activities\nare. Are they regulated or nonregulated? Then Arjuna inquires of the means\nby which he can attain the transcendental nature. That is very important.\nUnless one knows the direct means by which one can be situated always\ntranscendentally, there is no possibility of showing the symptoms. So all these\nquestions put by Arjuna are very important, and the Lord answers them.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "chapter": 11,
+            "section": "11.12",
+            "reference": "BG 11.12",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "doc_type": "gita",
+            "verse": "12",
+            "title": "The Universal Form",
+            "page": 586
+          },
+          "page_content": "BG 11.12 (The Universal Form)\n\nTRANSLATION: If hundreds of thousands of suns rose up at once into the sky, they might resemble the effulgence of the Supreme Person in that universal form.\n\nPURPORT: What Arjuna saw was indescribable, yet Sa\u00efjaya is trying to give a mental\npicture of that great revelation to Dh\u00e5tar\u00e4\u00f1\u00f6ra. Neither Sa\u00efjaya nor\nDh\u00e5tar\u00e4\u00f1\u00f6ra were present, but Sa\u00efjaya, by the grace of Vy\u00e4sa, could see\nwhatever happened. Thus he now compares the situation, as far as it can be\nunderstood, to an imaginable phenomenon (i.e. thousands of suns).",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "reference": "BG 11.12",
+            "chapter": 11,
+            "verse": "12",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "page": 586,
+            "doc_type": "gita",
+            "title": "The Universal Form",
+            "section": "11.12"
+          },
+          "page_content": "BG 11.12 (The Universal Form)\n\nTRANSLATION: If hundreds of thousands of suns rose up at once into the sky, they might resemble the effulgence of the Supreme Person in that universal form.\n\nPURPORT: What Arjuna saw was indescribable, yet Sa\u00efjaya is trying to give a mental\npicture of that great revelation to Dh\u00e5tar\u00e4\u00f1\u00f6ra. Neither Sa\u00efjaya nor\nDh\u00e5tar\u00e4\u00f1\u00f6ra were present, but Sa\u00efjaya, by the grace of Vy\u00e4sa, could see\nwhatever happened. Thus he now compares the situation, as far as it can be\nunderstood, to an imaginable phenomenon (i.e. thousands of suns).",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "doc_type": "gita",
+            "section": "2.54",
+            "reference": "BG 2.54",
+            "verse": "54",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "page": 154,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "chapter": 2
+          },
+          "page_content": "BG 2.54 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Arjuna said: What are the symptoms of one whose consciousness is thus merged in Transcendence? How does he speak, and what is his language? How does he sit, and how does he walk?\n\nPURPORT: As there are symptoms for each and every man, in terms of his particular\nsituation, similarly one who is K\u00e5\u00f1\u00eba conscious has his particular nature\u2014\ntalking, walking, thinking, feeling, etc. As a rich man has his symptoms by\nwhich he is known as a rich man, as a diseased man has his symptoms, by\nwhich he is known as diseased, or as a learned man has his symptoms, so a man\nin transcendental consciousness of K\u00e5\u00f1\u00eba has specific symptoms in various\ndealings. One can know his specific symptoms from the Bhagavad-g\u00e9t\u00e4. Most\nimportant is how the man in K\u00e5\u00f1\u00eba consciousness speaks, for speech is the\nmost important quality of any man. It is said that a fool is undiscovered as long\nas he does not speak, and certainly a well-dressed fool cannot be identified\nunless he speaks, but as soon as he speaks, he reveals himself at once. The\nimmediate symptom of a K\u00e5\u00f1\u00eba conscious man is that he speaks only of K\u00e5\u00f1\u00eba\nand of matters relating to Him. Other symptoms then automatically follow, as\nstated below.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "reference": "BG 2.54",
+            "chapter": 2,
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "section": "2.54",
+            "page": 154,
+            "doc_type": "gita",
+            "verse": "54",
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 2.54 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Arjuna said: What are the symptoms of one whose consciousness is thus merged in Transcendence? How does he speak, and what is his language? How does he sit, and how does he walk?\n\nPURPORT: As there are symptoms for each and every man, in terms of his particular\nsituation, similarly one who is K\u00e5\u00f1\u00eba conscious has his particular nature\u2014\ntalking, walking, thinking, feeling, etc. As a rich man has his symptoms by\nwhich he is known as a rich man, as a diseased man has his symptoms, by\nwhich he is known as diseased, or as a learned man has his symptoms, so a man\nin transcendental consciousness of K\u00e5\u00f1\u00eba has specific symptoms in various\ndealings. One can know his specific symptoms from the Bhagavad-g\u00e9t\u00e4. Most\nimportant is how the man in K\u00e5\u00f1\u00eba consciousness speaks, for speech is the\nmost important quality of any man. It is said that a fool is undiscovered as long\nas he does not speak, and certainly a well-dressed fool cannot be identified\nunless he speaks, but as soon as he speaks, he reveals himself at once. The\nimmediate symptom of a K\u00e5\u00f1\u00eba conscious man is that he speaks only of K\u00e5\u00f1\u00eba\nand of matters relating to Him. Other symptoms then automatically follow, as\nstated below.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "section": "3.33",
+            "verse": "33",
+            "doc_type": "gita",
+            "reference": "BG 3.33",
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "chapter": 3,
+            "page": 215,
+            "title": "Karma-yoga"
+          },
+          "page_content": "BG 3.33 (Karma-yoga)\n\nTRANSLATION: Even a man of knowledge acts according to his own nature, for everyone follows his nature. What can repression accomplish?\n\nPURPORT: Unless one is situated on the transcendental platform of K\u00e5\u00f1\u00eba\nconsciousness, he cannot get free from the influence of the modes of material\nnature, as it is confirmed by the Lord in the Seventh Chapter (7.14).\nTherefore, even for the most highly educated person on the mundane plane, it\nis impossible to get out of the entanglement of m\u00e4y\u00e4 simply by theoretical\nknowledge, or by separating the soul from the body. There are many so-called\nspiritualists who outwardly pose to be advanced in the science, but inwardly or\nprivately are completely under the particular modes of nature which they are\nunable to surpass. Academically, one may be very learned, but because of his\nlong association with material nature, he is in bondage. K\u00e5\u00f1\u00eba consciousness\nhelps one to get out of the material entanglement, even though one may be\nengaged in his prescribed duties. Therefore, without being fully in K\u00e5\u00f1\u00eba\nconsciousness, no one should suddenly give up his prescribed duties and\nbecome a so-called yog\u00e9 or transcendentalist artificially. It is better to be\nsituated in one\u2019s position and to try to attain K\u00e5\u00f1\u00eba consciousness under\nsuperior training. Thus one may be freed from the clutches of m\u00e4y\u00e4.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "doc_type": "gita",
+            "reference": "BG 3.33",
+            "type": "verse",
+            "chapter": 3,
+            "title": "Karma-yoga",
+            "verse": "33",
+            "page": 215,
+            "section": "3.33"
+          },
+          "page_content": "BG 3.33 (Karma-yoga)\n\nTRANSLATION: Even a man of knowledge acts according to his own nature, for everyone follows his nature. What can repression accomplish?\n\nPURPORT: Unless one is situated on the transcendental platform of K\u00e5\u00f1\u00eba\nconsciousness, he cannot get free from the influence of the modes of material\nnature, as it is confirmed by the Lord in the Seventh Chapter (7.14).\nTherefore, even for the most highly educated person on the mundane plane, it\nis impossible to get out of the entanglement of m\u00e4y\u00e4 simply by theoretical\nknowledge, or by separating the soul from the body. There are many so-called\nspiritualists who outwardly pose to be advanced in the science, but inwardly or\nprivately are completely under the particular modes of nature which they are\nunable to surpass. Academically, one may be very learned, but because of his\nlong association with material nature, he is in bondage. K\u00e5\u00f1\u00eba consciousness\nhelps one to get out of the material entanglement, even though one may be\nengaged in his prescribed duties. Therefore, without being fully in K\u00e5\u00f1\u00eba\nconsciousness, no one should suddenly give up his prescribed duties and\nbecome a so-called yog\u00e9 or transcendentalist artificially. It is better to be\nsituated in one\u2019s position and to try to attain K\u00e5\u00f1\u00eba consciousness under\nsuperior training. Thus one may be freed from the clutches of m\u00e4y\u00e4.",
+          "type": "Document"
+        }
+      ]
+    },
+    "trace_id": "019f377d-509b-7070-a53d-2f057c948661",
+    "parent_run_id": "019f377d-528f-7dc0-b1a2-1bce9f14d685"
+  },
+  {
+    "name": "retrieve",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:53:07.855561+00:00",
+    "latency_s": 15.573127,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is devotion?",
+      "question": "What is devotion?",
+      "tries": 0
+    },
+    "outputs": {
+      "documents": [
+        {
+          "id": "b7efeed7-b251-4e4a-bd81-2b26f3e572fb",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 655,
+            "reference": "BG 12.17",
+            "section": "12.17",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "17"
+          },
+          "page_content": "BG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.",
+          "type": "Document"
+        },
+        {
+          "id": "a0785053-5d11-491d-beae-08c9f13dfb1b",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 654,
+            "reference": "BG 12.16",
+            "section": "12.16",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "16"
+          },
+          "page_content": "BG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 8,
+            "doc_type": "gita",
+            "page": 436,
+            "reference": "BG 8.1",
+            "section": "8.1",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Attaining the Supreme",
+            "type": "verse",
+            "verse": "1"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "id": "8fcbc5b7-63a2-40b1-a299-c6e0663e3ddc",
+          "metadata": {
+            "chapter": 10,
+            "doc_type": "gita",
+            "page": 535,
+            "reference": "BG 10.7",
+            "section": "10.7",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Opulence of the Absolute",
+            "type": "verse",
+            "verse": "7"
+          },
+          "page_content": "BG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.",
+          "type": "Document"
+        },
+        {
+          "id": "f59c4cdc-5eed-48c0-9c87-424849b28f42",
+          "metadata": {
+            "chapter": 17,
+            "doc_type": "gita",
+            "page": 809,
+            "reference": "BG 17.11",
+            "section": "17.11",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Divisions of Faith",
+            "type": "verse",
+            "verse": "11"
+          },
+          "page_content": "BG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead.",
+          "type": "Document"
+        }
+      ],
+      "relevant": true
+    },
+    "trace_id": "019f377d-509b-7070-a53d-2f057c948661",
+    "parent_run_id": "019f377d-509b-7070-a53d-2f057c948661"
+  },
+  {
+    "name": "LangGraph",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:53:07.356016+00:00",
+    "latency_s": 16.074825,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is devotion?",
+      "question": "What is devotion?",
+      "tries": 0
+    },
+    "outputs": {
+      "api_key": null,
+      "context": "[1] (BG 12.17)\nBG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.\n\n[2] (BG 12.16)\nBG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.\n\n[3] (BG 8.1)\nBG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.\n\n[4] (BG 10.7)\nBG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.\n\n[5] (BG 17.11)\nBG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead.",
+      "documents": [
+        {
+          "id": "b7efeed7-b251-4e4a-bd81-2b26f3e572fb",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 655,
+            "reference": "BG 12.17",
+            "section": "12.17",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "17"
+          },
+          "page_content": "BG 12.17 (Devotional Service)\n\nTRANSLATION: One who neither grasps pleasure or grief, who neither laments nor desires, and who renounces both auspicious and inauspicious things, is very dear to Me.\n\nPURPORT: A pure devotee is neither happy nor distressed over material gain and loss,\nnor is he very much anxious to get a son or disciple, nor is he distressed by not\ngetting them. If he loses anything which is very dear to him, he does not\nlament. Similarly, if he does not get what he desires, he is not distressed. He is\ntranscendental in the face of all kinds of auspicious, inauspicious and sinful\nactivities. He is prepared to accept all kinds of risks for the satisfaction of the\nSupreme Lord. Nothing is an impediment in the discharge of his devotional\nservice. Such a devotee is very dear to K\u00e5\u00f1\u00eba.",
+          "type": "Document"
+        },
+        {
+          "id": "a0785053-5d11-491d-beae-08c9f13dfb1b",
+          "metadata": {
+            "chapter": 12,
+            "doc_type": "gita",
+            "page": 654,
+            "reference": "BG 12.16",
+            "section": "12.16",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Devotional Service",
+            "type": "verse",
+            "verse": "16"
+          },
+          "page_content": "BG 12.16 (Devotional Service)\n\nTRANSLATION: A devotee who is not dependant on the ordinary course of activities, who is pure, expert, without cares, free from all pains, and who does not strive for some result, is very dear to Me.\n\nPURPORT: Money may be offered to a devotee, but he should not struggle to acquire it.\nIf automatically, by the grace of the Supreme, money comes to him, he is not\nag\u00e9t\u00e4ted. Naturally a devotee takes bath at least twice in a day and rises early\nin the morning for devotional service. Thus he is naturally clean both\ninwardly and outwardly. A devotee is always expert because he fully knows the\nsense of all activities of life, and he is convinced of the authoritative\nscriptures. A devotee never takes the part of a particular party; therefore he is\ncarefree. He is never pained because he is free from all designations; he knows\nthat his body is a designation, so if there are some bodily pains, he is free. The\npure devotee does not endeavor for anything which is against the principles of\ndevotional service. For example, constructing a big building requires great\nenergy, and a devotee does not take to such business if it does not benefit him\nby advancing his devotional service. He may construct a temple for the Lord,\nand for that he may take all kinds of anxiety, but he does not construct a big\nhouse for his personal relations.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 8,
+            "doc_type": "gita",
+            "page": 436,
+            "reference": "BG 8.1",
+            "section": "8.1",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Attaining the Supreme",
+            "type": "verse",
+            "verse": "1"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "id": "8fcbc5b7-63a2-40b1-a299-c6e0663e3ddc",
+          "metadata": {
+            "chapter": 10,
+            "doc_type": "gita",
+            "page": 535,
+            "reference": "BG 10.7",
+            "section": "10.7",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Opulence of the Absolute",
+            "type": "verse",
+            "verse": "7"
+          },
+          "page_content": "BG 10.7 (The Opulence of the Absolute)\n\nTRANSLATION: He who knows in truth this glory and power of Mine engages in unalloyed devotional service; of this there is no doubt.\n\nPURPORT: The highest summit of spiritual perfection is knowledge of the Supreme\nPersonality of Godhead. Unless one is firmly convinced of the different\nopulences of the Supreme Lord, he cannot engage in devotional service.\nGenerally people know that God is great, but they do not know in detail how\nGod is great. Here are the details. If one knows factually how God is great,\nthen naturally he becomes a surrendered soul and engages himself in the\ndevotional service of the Lord. When one factually knows the opulences of the\nSupreme, there is no alternative but to surrender to Him. This factual\nknowledge can be known from the descriptions in \u00c7r\u00e9mad-Bh\u00e4gavatam and\nBhagavad-g\u00e9t\u00e4 and similar literatures.\nIn the administration of this universe there are many demigods distributed\nthroughout the planetary system, and the chief of them are Brahm\u00e4, Lord \u00c7iva\nand the four great Kum\u00e4ras and other patriarchs. There are many forefathers\nof the population of the universe, and all of them are born of the Supreme\nLord K\u00e5\u00f1\u00eba. The Supreme Personality of Godhead, K\u00e5\u00f1\u00eba, is the original\nforefather of all forefathers.\nThese are some of the opulences of the Supreme Lord. When one is firmly\nconvinced of them, he accepts K\u00e5\u00f1\u00eba with great faith and without any doubt,\nand he engages in devotional service. All this particular knowledge is required\nin order to increase one\u2019s interest in the loving devotional service of the Lord.\nOne should not neglect to understand fully how great K\u00e5\u00f1\u00eba is, for by knowing\nthe greatness of K\u00e5\u00f1\u00eba one will be able to be fixed in sincere devotional\nservice.",
+          "type": "Document"
+        },
+        {
+          "id": "f59c4cdc-5eed-48c0-9c87-424849b28f42",
+          "metadata": {
+            "chapter": 17,
+            "doc_type": "gita",
+            "page": 809,
+            "reference": "BG 17.11",
+            "section": "17.11",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Divisions of Faith",
+            "type": "verse",
+            "verse": "11"
+          },
+          "page_content": "BG 17.11 (The Divisions of Faith)\n\nTRANSLATION: Of sacrifices, that sacrifice performed according to duty and to scriptural rules, and with no expectation of reward, is of the nature of goodness.\n\nPURPORT: The general tendency is to offer sacrifice with some purpose in mind, but\nhere it is stated that sacrifice should be performed without any such desire. It\nshould be done as a matter of duty. Take, for example, the performance of\nrituals in temples or in churches. Generally they are performed with the\npurpose of material benefit, but that is not in the mode of goodness. One\nshould go to a temple or church as a matter of duty, offer respect to the\nSupreme Personality of Godhead and offer flowers and eatables. Everyone\nthinks that there is no use in going to the temple just to worship God. But\nworship for economic benefit is not recommended in the scriptural injunction.\nOne should go simply to offer respect to the Deity. That will place one in the\nmode of goodness. It is the duty of every civilized man to obey the injunctions\nof the scriptures and offer respect to the Supreme Personality of Godhead.",
+          "type": "Document"
+        }
+      ],
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is devotion?",
+      "question": "What is devotion?",
+      "relevant": true,
+      "tries": 0
+    },
+    "trace_id": "019f377d-509b-7070-a53d-2f057c948661",
+    "parent_run_id": null
+  },
+  {
+    "name": "ChatOllama",
+    "run_type": "llm",
+    "start_time": "2026-07-06T12:22:05.329733+00:00",
+    "latency_s": 255.263125,
+    "total_tokens": 2627,
+    "prompt_tokens": 1888,
+    "completion_tokens": 739,
+    "prefill_tok_per_s": 22.08,
+    "decode_tok_per_s": 4.4,
+    "error": null,
+    "inputs": {
+      "messages": [
+        [
+          {
+            "id": [
+              "langchain",
+              "schema",
+              "messages",
+              "SystemMessage"
+            ],
+            "kwargs": {
+              "content": "You are GITAGPT, a study assistant for the Bhagavad-gita As It Is.\n\nRules:\n- Answer ONLY using the provided context passages. Do not use outside knowledge.\n- Cite the verses you rely on in the form (BG chapter.verse), e.g. (BG 2.47).\n- If the context does not contain the answer, say exactly:\n  \"This is not addressed in the provided text.\"\n- Be clear and faithful to the text; do not invent teachings or verse numbers.\n",
+              "type": "system"
+            },
+            "lc": 1,
+            "type": "constructor"
+          },
+          {
+            "id": [
+              "langchain",
+              "schema",
+              "messages",
+              "HumanMessage"
+            ],
+            "kwargs": {
+              "content": "Context passages:\n[1] (BG 2.48)\nBG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.\n\n[2] (BG 6.3)\nBG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.\n\n[3] (BG 6.6)\nBG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.\n\n[4] (BG 6.2)\nBG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.\n\n[5] (BG 6.26)\nBG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.\n\nQuestion: What is yoga?\n\nAnswer (with verse citations):",
+              "type": "human"
+            },
+            "lc": 1,
+            "type": "constructor"
+          }
+        ]
+      ]
+    },
+    "outputs": {
+      "generations": [
+        [
+          {
+            "generation_info": {
+              "created_at": "2026-07-06T12:26:20.5893445Z",
+              "done": true,
+              "done_reason": "stop",
+              "eval_count": 739,
+              "eval_duration": 167961956000,
+              "load_duration": 1753343900,
+              "logprobs": null,
+              "model": "gemma4:e4b",
+              "model_name": "gemma4:e4b",
+              "model_provider": "ollama",
+              "prompt_eval_count": 1888,
+              "prompt_eval_duration": 85492984000,
+              "total_duration": 255240356700
+            },
+            "message": {
+              "id": [
+                "langchain",
+                "schema",
+                "messages",
+                "AIMessageChunk"
+              ],
+              "kwargs": {
+                "content": "Based on the provided texts, yoga can be defined in several ways:\n\n*   **Evenness of Mind:** Yoga is described as \"evenness of mind\" (BG 2.48).\n*   **Concentration/Control:** It means to concentrate the mind upon the Supreme by controlling the ever-disturbing senses (PURPORT, BG 2.48).\n*   **Linking with the Supreme:** Yoga is defined as \"linking oneself with the Supreme\" (BG 6.3) and is also stated that what is called renunciation is the same as yoga, or linking oneself with the Supreme (BG 6.2).\n\nAdditionally, the process of linking oneself with the Supreme is referred to as yoga (PURPORT, BG 6.3).",
+                "id": "lc_run--019f3760-e711-7552-9ca2-34b5a745912a",
+                "invalid_tool_calls": [],
+                "response_metadata": {
+                  "created_at": "2026-07-06T12:26:20.5893445Z",
+                  "done": true,
+                  "done_reason": "stop",
+                  "eval_count": 739,
+                  "eval_duration": 167961956000,
+                  "load_duration": 1753343900,
+                  "logprobs": null,
+                  "model": "gemma4:e4b",
+                  "model_name": "gemma4:e4b",
+                  "model_provider": "ollama",
+                  "prompt_eval_count": 1888,
+                  "prompt_eval_duration": 85492984000,
+                  "total_duration": 255240356700
+                },
+                "tool_calls": [],
+                "type": "AIMessageChunk",
+                "usage_metadata": {
+                  "input_tokens": 1888,
+                  "output_tokens": 739,
+                  "total_tokens": 2627
+                }
+              },
+              "lc": 1,
+              "type": "constructor"
+            },
+            "text": "Based on the provided texts, yoga can be defined in several ways:\n\n*   **Evenness of Mind:** Yoga is described as \"evenness of mind\" (BG 2.48).\n*   **Concentration/Control:** It means to concentrate the mind upon the Supreme by controlling the ever-disturbing senses (PURPORT, BG 2.48).\n*   **Linking with the Supreme:** Yoga is defined as \"linking oneself with the Supreme\" (BG 6.3) and is also stated that what is called renunciation is the same as yoga, or linking oneself with the Supreme (BG 6.2).\n\nAdditionally, the process of linking oneself with the Supreme is referred to as yoga (PURPORT, BG 6.3).",
+            "type": "ChatGenerationChunk"
+          }
+        ]
+      ],
+      "llm_output": null,
+      "run": null,
+      "type": "LLMResult"
+    },
+    "trace_id": "019f3760-e711-7552-9ca2-34b5a745912a",
+    "parent_run_id": null
+  },
+  {
+    "name": "finalize",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:22:01.377080+00:00",
+    "latency_s": 0.000992,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "documents": [
+        {
+          "id": "649008d0-d058-4738-aa82-43468acb2999",
+          "metadata": {
+            "chapter": 2,
+            "doc_type": "gita",
+            "page": 147,
+            "reference": "BG 2.48",
+            "section": "2.48",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "type": "verse",
+            "verse": "48"
+          },
+          "page_content": "BG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.",
+          "type": "Document"
+        },
+        {
+          "id": "e9421397-4fd7-46c4-9536-00d60bbce5df",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 331,
+            "reference": "BG 6.3",
+            "section": "6.3",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "3"
+          },
+          "page_content": "BG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.",
+          "type": "Document"
+        },
+        {
+          "id": "2fe23ea9-f906-46b0-92bf-1e9232a3ef36",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 334,
+            "reference": "BG 6.6",
+            "section": "6.6",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "6"
+          },
+          "page_content": "BG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.",
+          "type": "Document"
+        },
+        {
+          "id": "67cb1493-8f4b-4a28-aaed-2476069f68ae",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 330,
+            "reference": "BG 6.2",
+            "section": "6.2",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "2"
+          },
+          "page_content": "BG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 357,
+            "reference": "BG 6.26",
+            "section": "6.26",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "26"
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        }
+      ],
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is yoga?",
+      "question": "What is yoga?",
+      "relevant": true,
+      "tries": 0
+    },
+    "outputs": {
+      "context": "[1] (BG 2.48)\nBG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.\n\n[2] (BG 6.3)\nBG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.\n\n[3] (BG 6.6)\nBG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.\n\n[4] (BG 6.2)\nBG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.\n\n[5] (BG 6.26)\nBG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice."
+    },
+    "trace_id": "019f3760-756e-79f1-bf7c-159a864c8916",
+    "parent_run_id": "019f3760-756e-79f1-bf7c-159a864c8916"
+  },
+  {
+    "name": "decide",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:22:01.363290+00:00",
+    "latency_s": 0.010405,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "documents": [
+        {
+          "id": "649008d0-d058-4738-aa82-43468acb2999",
+          "metadata": {
+            "chapter": 2,
+            "doc_type": "gita",
+            "page": 147,
+            "reference": "BG 2.48",
+            "section": "2.48",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "type": "verse",
+            "verse": "48"
+          },
+          "page_content": "BG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.",
+          "type": "Document"
+        },
+        {
+          "id": "e9421397-4fd7-46c4-9536-00d60bbce5df",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 331,
+            "reference": "BG 6.3",
+            "section": "6.3",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "3"
+          },
+          "page_content": "BG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.",
+          "type": "Document"
+        },
+        {
+          "id": "2fe23ea9-f906-46b0-92bf-1e9232a3ef36",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 334,
+            "reference": "BG 6.6",
+            "section": "6.6",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "6"
+          },
+          "page_content": "BG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.",
+          "type": "Document"
+        },
+        {
+          "id": "67cb1493-8f4b-4a28-aaed-2476069f68ae",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 330,
+            "reference": "BG 6.2",
+            "section": "6.2",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "2"
+          },
+          "page_content": "BG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 357,
+            "reference": "BG 6.26",
+            "section": "6.26",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "26"
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        }
+      ],
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is yoga?",
+      "question": "What is yoga?",
+      "relevant": true,
+      "tries": 0
+    },
+    "outputs": {
+      "output": "finalize"
+    },
+    "trace_id": "019f3760-756e-79f1-bf7c-159a864c8916",
+    "parent_run_id": "019f3760-76bf-7dd2-b687-68efaff986e3"
+  },
+  {
+    "name": "BM25Retriever",
+    "run_type": "retriever",
+    "start_time": "2026-07-06T12:21:37.162809+00:00",
+    "latency_s": 0.004923,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "query": "What is yoga?"
+    },
+    "outputs": {
+      "documents": [
+        {
+          "metadata": {
+            "doc_type": "gita",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "section": "2.48",
+            "chapter": 2,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "reference": "BG 2.48",
+            "verse": "48",
+            "type": "verse",
+            "page": 147
+          },
+          "page_content": "BG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "section": "2.48",
+            "chapter": 2,
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "type": "verse",
+            "verse": "48",
+            "page": 147,
+            "reference": "BG 2.48",
+            "doc_type": "gita"
+          },
+          "page_content": "BG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "reference": "BG 8.1",
+            "page": 436,
+            "section": "8.1",
+            "doc_type": "gita",
+            "chapter": 8,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Attaining the Supreme",
+            "verse": "1"
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "verse": "1",
+            "reference": "BG 8.1",
+            "page": 436,
+            "section": "8.1",
+            "doc_type": "gita",
+            "title": "Attaining the Supreme",
+            "chapter": 8
+          },
+          "page_content": "BG 8.1 (Attaining the Supreme)\n\nTRANSLATION: Arjuna inquired: O my Lord, O Supreme Person, what is Brahman? What is the self? What are fruitive activities? What is this material manifestation? And what are the demigods? Please explain this to me.\n\nPURPORT: In this chapter Lord K\u00e5\u00f1\u00eba answers these different questions of Arjuna\nbeginning with, \"What is Brahman?\" The Lord also explains karma, fruitive\nactivities, devotional service and yoga principles, and devotional service in its\npure form. The \u00c7r\u00e9mad-Bh\u00e4gavatam explains that the Supreme Absolute Truth\nis known as Brahman, Param\u00e4tm\u00e4, and Bhagav\u00e4n. In addition, the living\nentity, individual soul, is also called Brahman. Arjuna also inquires about\n\u00e4tm\u00e4, which refers to body, soul and mind. According to the Vedic dictionary,\n\u00e4tm\u00e4 refers to the mind, soul, body and senses also.\nArjuna has addressed the Supreme Lord as Puru\u00f1ottama, Supreme Person,\nwhich means that he was putting these questions not simply to a friend but to\nthe Supreme Person, knowing Him to be the supreme authority able to give\ndefinitive answers.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "doc_type": "gita",
+            "type": "verse",
+            "verse": "40",
+            "page": 572,
+            "section": "10.40",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "chapter": 10,
+            "reference": "BG 10.40",
+            "title": "The Opulence of the Absolute"
+          },
+          "page_content": "BG 10.40 (The Opulence of the Absolute)\n\nTRANSLATION: O mighty conqueror of enemies, there is no end to My divine manifestations. What I have spoken to you is but a mere indication of My infinite opulences.\n\nPURPORT: As stated in the Vedic literature, although the opulences and energies of\nthe Supreme are understood in various ways, there is no limit to such\nopulences; therefore not all the opulences and energies can be explained.\nSimply a few examples are being described to Arjuna to pacify his\ninquisitiveness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "reference": "BG 10.40",
+            "verse": "40",
+            "title": "The Opulence of the Absolute",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "page": 572,
+            "section": "10.40",
+            "doc_type": "gita",
+            "chapter": 10,
+            "type": "verse"
+          },
+          "page_content": "BG 10.40 (The Opulence of the Absolute)\n\nTRANSLATION: O mighty conqueror of enemies, there is no end to My divine manifestations. What I have spoken to you is but a mere indication of My infinite opulences.\n\nPURPORT: As stated in the Vedic literature, although the opulences and energies of\nthe Supreme are understood in various ways, there is no limit to such\nopulences; therefore not all the opulences and energies can be explained.\nSimply a few examples are being described to Arjuna to pacify his\ninquisitiveness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "reference": "BG 6.26",
+            "section": "6.26",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "doc_type": "gita",
+            "page": 357,
+            "verse": "26",
+            "type": "verse",
+            "chapter": 6,
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "26",
+            "page": 357,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "reference": "BG 6.26",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "section": "6.26",
+            "doc_type": "gita",
+            "chapter": 6
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "section": "18.64",
+            "type": "verse",
+            "page": 884,
+            "chapter": 18,
+            "verse": "64",
+            "title": "Conclusion\u2014The Perfection of Renunciation",
+            "doc_type": "gita",
+            "reference": "BG 18.64",
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 18.64 (Conclusion\u2014The Perfection of Renunciation)\n\nTRANSLATION: Because you are My very dear friend, I am speaking to you the most confidential part of knowledge. Hear this from Me, for it is for your benefit.\n\nPURPORT: The Lord has given Arjuna confidential knowledge of the Supersoul within\neveryone\u2019s heart, and now He is giving the most confidential part of this\nknowledge: just surrender unto the Supreme Personality of Godhead. At the\nend of the Ninth Chapter He has said, \u201cJust always think of Me.\u201d The same\ninstruction is repeated here to stress the essence of the teachings of Bhagavad-\ng\u00e9t\u00e4. This essence is not understood by a common man, but by one who is\nactually very dear to K\u00e5\u00f1\u00eba, a pure devotee of K\u00e5\u00f1\u00eba. This is the most\nimportant instruction in all Vedic literature. What K\u00e5\u00f1\u00eba is saying in this\nconnection is the most essential part of knowledge, and it should be carried\nout not only by Arjuna but by all living entities.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 18,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "type": "verse",
+            "verse": "64",
+            "page": 884,
+            "reference": "BG 18.64",
+            "doc_type": "gita",
+            "title": "Conclusion\u2014The Perfection of Renunciation",
+            "section": "18.64"
+          },
+          "page_content": "BG 18.64 (Conclusion\u2014The Perfection of Renunciation)\n\nTRANSLATION: Because you are My very dear friend, I am speaking to you the most confidential part of knowledge. Hear this from Me, for it is for your benefit.\n\nPURPORT: The Lord has given Arjuna confidential knowledge of the Supersoul within\neveryone\u2019s heart, and now He is giving the most confidential part of this\nknowledge: just surrender unto the Supreme Personality of Godhead. At the\nend of the Ninth Chapter He has said, \u201cJust always think of Me.\u201d The same\ninstruction is repeated here to stress the essence of the teachings of Bhagavad-\ng\u00e9t\u00e4. This essence is not understood by a common man, but by one who is\nactually very dear to K\u00e5\u00f1\u00eba, a pure devotee of K\u00e5\u00f1\u00eba. This is the most\nimportant instruction in all Vedic literature. What K\u00e5\u00f1\u00eba is saying in this\nconnection is the most essential part of knowledge, and it should be carried\nout not only by Arjuna but by all living entities.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "19",
+            "doc_type": "gita",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "chapter": 2,
+            "type": "verse",
+            "reference": "BG 2.19",
+            "page": 109,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "section": "2.19"
+          },
+          "page_content": "BG 2.19 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: He who thinks that the living entity is the slayer or that he is slain, does not understand. One who is in knowledge knows that the self slays not nor is slain.\n\nPURPORT: When an embodied living entity is hurt by fatal weapons, it is to be known\nthat the living entity within the body is not killed. The spirit soul is so small\nthat it is impossible to kill him by any material weapon, as is evident from the\nprevious verses. Nor is the living entity killable because of his spiritual\nconstitution. What is killed, or is supposed to be killed, is the body only. This,\nhowever, does not at all encourage killing of the body. The Vedic injunction\nis, \u201cm\u00e4hi\u00e0sy\u00e4t sarva-bh\u00fct\u00e4ni\u201d never commit violence to anyone. Nor does\nunderstanding that the living entity is not killed encourage animal slaughter.\nKilling the body of anyone without authority is abominable and is punishable\nby the law of the state as well as by the law of the Lord. Arjuna, however, is\nbeing engaged in killing for the principle of religion, and not whimsically.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 2,
+            "page": 109,
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "reference": "BG 2.19",
+            "verse": "19",
+            "doc_type": "gita",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "section": "2.19"
+          },
+          "page_content": "BG 2.19 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: He who thinks that the living entity is the slayer or that he is slain, does not understand. One who is in knowledge knows that the self slays not nor is slain.\n\nPURPORT: When an embodied living entity is hurt by fatal weapons, it is to be known\nthat the living entity within the body is not killed. The spirit soul is so small\nthat it is impossible to kill him by any material weapon, as is evident from the\nprevious verses. Nor is the living entity killable because of his spiritual\nconstitution. What is killed, or is supposed to be killed, is the body only. This,\nhowever, does not at all encourage killing of the body. The Vedic injunction\nis, \u201cm\u00e4hi\u00e0sy\u00e4t sarva-bh\u00fct\u00e4ni\u201d never commit violence to anyone. Nor does\nunderstanding that the living entity is not killed encourage animal slaughter.\nKilling the body of anyone without authority is abominable and is punishable\nby the law of the state as well as by the law of the Lord. Arjuna, however, is\nbeing engaged in killing for the principle of religion, and not whimsically.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "69",
+            "page": 170,
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "chapter": 2,
+            "doc_type": "gita",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "section": "2.69",
+            "type": "verse",
+            "reference": "BG 2.69"
+          },
+          "page_content": "BG 2.69 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: What is night for all beings is the time of awakening for the self-controlled; and the time of awakening for all beings is night for the introspective sage.\n\nPURPORT: There are two classes of intelligent men. The one is intelligent in material\nactivities for sense gratification, and the other is introspective and awake to\nthe cultivation of self-realization. Activities of the introspective sage, or\nthoughtful man, are night for persons materially absorbed. Materialistic\npersons remain asleep in such a night due to their ignorance of self-realization.\nThe introspective sage remains alert in the \u201cnight\u201d of the materialistic men.\nThe sage feels transcendental pleasure in the gradual advancement of spiritual\nculture, whereas the man in materialistic activities, being asleep to self-\nrealization, dreams of varieties of sense pleasure, feeling sometimes happy and\nsometimes distressed in his sleeping condition. The introspective man is\nalways indifferent to materialistic happiness and distress. He goes on with his\nself-realization activities undisturbed by material reaction.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "page": 170,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "verse": "69",
+            "reference": "BG 2.69",
+            "doc_type": "gita",
+            "section": "2.69",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "type": "verse",
+            "chapter": 2
+          },
+          "page_content": "BG 2.69 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: What is night for all beings is the time of awakening for the self-controlled; and the time of awakening for all beings is night for the introspective sage.\n\nPURPORT: There are two classes of intelligent men. The one is intelligent in material\nactivities for sense gratification, and the other is introspective and awake to\nthe cultivation of self-realization. Activities of the introspective sage, or\nthoughtful man, are night for persons materially absorbed. Materialistic\npersons remain asleep in such a night due to their ignorance of self-realization.\nThe introspective sage remains alert in the \u201cnight\u201d of the materialistic men.\nThe sage feels transcendental pleasure in the gradual advancement of spiritual\nculture, whereas the man in materialistic activities, being asleep to self-\nrealization, dreams of varieties of sense pleasure, feeling sometimes happy and\nsometimes distressed in his sleeping condition. The introspective man is\nalways indifferent to materialistic happiness and distress. He goes on with his\nself-realization activities undisturbed by material reaction.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "verse": "21",
+            "title": "The Three Modes of Material Nature",
+            "reference": "BG 14.21",
+            "doc_type": "gita",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "chapter": 14,
+            "type": "verse",
+            "page": 728,
+            "section": "14.21"
+          },
+          "page_content": "BG 14.21 (The Three Modes of Material Nature)\n\nTRANSLATION: Arjuna inquired: O my dear Lord, by what symptoms is one known who is transcendental to those modes? What is his behavior? And how does he transcend the modes of nature?\n\nPURPORT: In this verse, Arjuna\u2019s questions are very appropriate. He wants to know\nthe symptoms of a person who has already transcended the material modes. He\nfirst inquires of the symptoms of such a transcendental person. How can one\nunderstand that he has already transcended the influence of the modes of\nmaterial nature? The second question asks how he lives and what his activities\nare. Are they regulated or nonregulated? Then Arjuna inquires of the means\nby which he can attain the transcendental nature. That is very important.\nUnless one knows the direct means by which one can be situated always\ntranscendentally, there is no possibility of showing the symptoms. So all these\nquestions put by Arjuna are very important, and the Lord answers them.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 14,
+            "verse": "21",
+            "page": 728,
+            "reference": "BG 14.21",
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "The Three Modes of Material Nature",
+            "section": "14.21",
+            "doc_type": "gita"
+          },
+          "page_content": "BG 14.21 (The Three Modes of Material Nature)\n\nTRANSLATION: Arjuna inquired: O my dear Lord, by what symptoms is one known who is transcendental to those modes? What is his behavior? And how does he transcend the modes of nature?\n\nPURPORT: In this verse, Arjuna\u2019s questions are very appropriate. He wants to know\nthe symptoms of a person who has already transcended the material modes. He\nfirst inquires of the symptoms of such a transcendental person. How can one\nunderstand that he has already transcended the influence of the modes of\nmaterial nature? The second question asks how he lives and what his activities\nare. Are they regulated or nonregulated? Then Arjuna inquires of the means\nby which he can attain the transcendental nature. That is very important.\nUnless one knows the direct means by which one can be situated always\ntranscendentally, there is no possibility of showing the symptoms. So all these\nquestions put by Arjuna are very important, and the Lord answers them.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "title": "The Universal Form",
+            "reference": "BG 11.12",
+            "chapter": 11,
+            "section": "11.12",
+            "page": 586,
+            "verse": "12",
+            "doc_type": "gita",
+            "source": "Bhagavad-gita-As-It-Is.pdf"
+          },
+          "page_content": "BG 11.12 (The Universal Form)\n\nTRANSLATION: If hundreds of thousands of suns rose up at once into the sky, they might resemble the effulgence of the Supreme Person in that universal form.\n\nPURPORT: What Arjuna saw was indescribable, yet Sa\u00efjaya is trying to give a mental\npicture of that great revelation to Dh\u00e5tar\u00e4\u00f1\u00f6ra. Neither Sa\u00efjaya nor\nDh\u00e5tar\u00e4\u00f1\u00f6ra were present, but Sa\u00efjaya, by the grace of Vy\u00e4sa, could see\nwhatever happened. Thus he now compares the situation, as far as it can be\nunderstood, to an imaginable phenomenon (i.e. thousands of suns).",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "doc_type": "gita",
+            "verse": "12",
+            "section": "11.12",
+            "chapter": 11,
+            "reference": "BG 11.12",
+            "title": "The Universal Form",
+            "type": "verse",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "page": 586
+          },
+          "page_content": "BG 11.12 (The Universal Form)\n\nTRANSLATION: If hundreds of thousands of suns rose up at once into the sky, they might resemble the effulgence of the Supreme Person in that universal form.\n\nPURPORT: What Arjuna saw was indescribable, yet Sa\u00efjaya is trying to give a mental\npicture of that great revelation to Dh\u00e5tar\u00e4\u00f1\u00f6ra. Neither Sa\u00efjaya nor\nDh\u00e5tar\u00e4\u00f1\u00f6ra were present, but Sa\u00efjaya, by the grace of Vy\u00e4sa, could see\nwhatever happened. Thus he now compares the situation, as far as it can be\nunderstood, to an imaginable phenomenon (i.e. thousands of suns).",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "type": "verse",
+            "page": 154,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "section": "2.54",
+            "chapter": 2,
+            "reference": "BG 2.54",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "verse": "54",
+            "doc_type": "gita"
+          },
+          "page_content": "BG 2.54 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Arjuna said: What are the symptoms of one whose consciousness is thus merged in Transcendence? How does he speak, and what is his language? How does he sit, and how does he walk?\n\nPURPORT: As there are symptoms for each and every man, in terms of his particular\nsituation, similarly one who is K\u00e5\u00f1\u00eba conscious has his particular nature\u2014\ntalking, walking, thinking, feeling, etc. As a rich man has his symptoms by\nwhich he is known as a rich man, as a diseased man has his symptoms, by\nwhich he is known as diseased, or as a learned man has his symptoms, so a man\nin transcendental consciousness of K\u00e5\u00f1\u00eba has specific symptoms in various\ndealings. One can know his specific symptoms from the Bhagavad-g\u00e9t\u00e4. Most\nimportant is how the man in K\u00e5\u00f1\u00eba consciousness speaks, for speech is the\nmost important quality of any man. It is said that a fool is undiscovered as long\nas he does not speak, and certainly a well-dressed fool cannot be identified\nunless he speaks, but as soon as he speaks, he reveals himself at once. The\nimmediate symptom of a K\u00e5\u00f1\u00eba conscious man is that he speaks only of K\u00e5\u00f1\u00eba\nand of matters relating to Him. Other symptoms then automatically follow, as\nstated below.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 2,
+            "type": "verse",
+            "section": "2.54",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "verse": "54",
+            "reference": "BG 2.54",
+            "page": 154,
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "doc_type": "gita"
+          },
+          "page_content": "BG 2.54 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Arjuna said: What are the symptoms of one whose consciousness is thus merged in Transcendence? How does he speak, and what is his language? How does he sit, and how does he walk?\n\nPURPORT: As there are symptoms for each and every man, in terms of his particular\nsituation, similarly one who is K\u00e5\u00f1\u00eba conscious has his particular nature\u2014\ntalking, walking, thinking, feeling, etc. As a rich man has his symptoms by\nwhich he is known as a rich man, as a diseased man has his symptoms, by\nwhich he is known as diseased, or as a learned man has his symptoms, so a man\nin transcendental consciousness of K\u00e5\u00f1\u00eba has specific symptoms in various\ndealings. One can know his specific symptoms from the Bhagavad-g\u00e9t\u00e4. Most\nimportant is how the man in K\u00e5\u00f1\u00eba consciousness speaks, for speech is the\nmost important quality of any man. It is said that a fool is undiscovered as long\nas he does not speak, and certainly a well-dressed fool cannot be identified\nunless he speaks, but as soon as he speaks, he reveals himself at once. The\nimmediate symptom of a K\u00e5\u00f1\u00eba conscious man is that he speaks only of K\u00e5\u00f1\u00eba\nand of matters relating to Him. Other symptoms then automatically follow, as\nstated below.",
+          "type": "Document"
+        }
+      ]
+    },
+    "trace_id": "019f3760-756e-79f1-bf7c-159a864c8916",
+    "parent_run_id": "019f3760-76bf-7dd2-b687-68efaff986e3"
+  },
+  {
+    "name": "retrieve",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:21:36.575361+00:00",
+    "latency_s": 24.799435,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is yoga?",
+      "question": "What is yoga?",
+      "tries": 0
+    },
+    "outputs": {
+      "documents": [
+        {
+          "id": "649008d0-d058-4738-aa82-43468acb2999",
+          "metadata": {
+            "chapter": 2,
+            "doc_type": "gita",
+            "page": 147,
+            "reference": "BG 2.48",
+            "section": "2.48",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "type": "verse",
+            "verse": "48"
+          },
+          "page_content": "BG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.",
+          "type": "Document"
+        },
+        {
+          "id": "e9421397-4fd7-46c4-9536-00d60bbce5df",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 331,
+            "reference": "BG 6.3",
+            "section": "6.3",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "3"
+          },
+          "page_content": "BG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.",
+          "type": "Document"
+        },
+        {
+          "id": "2fe23ea9-f906-46b0-92bf-1e9232a3ef36",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 334,
+            "reference": "BG 6.6",
+            "section": "6.6",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "6"
+          },
+          "page_content": "BG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.",
+          "type": "Document"
+        },
+        {
+          "id": "67cb1493-8f4b-4a28-aaed-2476069f68ae",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 330,
+            "reference": "BG 6.2",
+            "section": "6.2",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "2"
+          },
+          "page_content": "BG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 357,
+            "reference": "BG 6.26",
+            "section": "6.26",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "26"
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        }
+      ],
+      "relevant": true
+    },
+    "trace_id": "019f3760-756e-79f1-bf7c-159a864c8916",
+    "parent_run_id": "019f3760-756e-79f1-bf7c-159a864c8916"
+  },
+  {
+    "name": "LangGraph",
+    "run_type": "chain",
+    "start_time": "2026-07-06T12:21:36.238814+00:00",
+    "latency_s": 25.140456,
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "prefill_tok_per_s": null,
+    "decode_tok_per_s": null,
+    "error": null,
+    "inputs": {
+      "api_key": null,
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is yoga?",
+      "question": "What is yoga?",
+      "tries": 0
+    },
+    "outputs": {
+      "api_key": null,
+      "context": "[1] (BG 2.48)\nBG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.\n\n[2] (BG 6.3)\nBG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.\n\n[3] (BG 6.6)\nBG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.\n\n[4] (BG 6.2)\nBG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.\n\n[5] (BG 6.26)\nBG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+      "documents": [
+        {
+          "id": "649008d0-d058-4738-aa82-43468acb2999",
+          "metadata": {
+            "chapter": 2,
+            "doc_type": "gita",
+            "page": 147,
+            "reference": "BG 2.48",
+            "section": "2.48",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "Contents of the G\u00e9t\u00e4 Summarized",
+            "type": "verse",
+            "verse": "48"
+          },
+          "page_content": "BG 2.48 (Contents of the G\u00e9t\u00e4 Summarized)\n\nTRANSLATION: Be steadfast in yoga, O Arjuna. Perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga.\n\nPURPORT: K\u00e5\u00f1\u00eba tells Arjuna that he should act in yoga. And what is that yoga? Yoga\nmeans to concentrate the mind upon the Supreme by controlling the ever-\ndisturbing senses. And who is the Supreme? The Supreme is the Lord. And\nbecause He Himself is telling Arjuna to fight, Arjuna has nothing to do with\nthe results of the fight. Gain or victory are K\u00e5\u00f1\u00eba\u2019s concern; Arjuna is simply\nadvised to act according to the dictation of K\u00e5\u00f1\u00eba. The following of K\u00e5\u00f1\u00eba\u2019s\ndictation is real yoga, and this is practiced in the process called K\u00e5\u00f1\u00eba\nconsciousness. By K\u00e5\u00f1\u00eba consciousness only can one give up the sense of\nproprietorship. One has to become the servant of K\u00e5\u00f1\u00eba, or the servant of the\nservant of K\u00e5\u00f1\u00eba. That is the right way to discharge duty in K\u00e5\u00f1\u00eba\nconsciousness, which alone can help one to act in yoga.\nArjuna is a k\u00f1atriya, and as such he is participating in the var\u00eb\u00e4\u00e7rama-dharma\ninstitution. It is said in the Vi\u00f1\u00ebu Pura\u00eba that in the var\u00eb\u00e4\u00e7rama-dharma, the\nwhole aim is to satisfy Vi\u00f1\u00ebu. No one should satisfy himself, as is the rule in\nthe material world, but one should satisfy K\u00e5\u00f1\u00eba. So, unless one satisfies K\u00e5\u00f1\u00eba,\none cannot correctly observe the principles of var\u00eb\u00e4\u00e7rama-dharma. Indirectly,\nArjuna was advised to act as K\u00e5\u00f1\u00eba told him.",
+          "type": "Document"
+        },
+        {
+          "id": "e9421397-4fd7-46c4-9536-00d60bbce5df",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 331,
+            "reference": "BG 6.3",
+            "section": "6.3",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "3"
+          },
+          "page_content": "BG 6.3 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For one who is a neophyte in the eightfold yoga system, work is said to be the means; and for one who has already attained to yoga, cessation of all material activities is said to be the means.\n\nPURPORT: The process of linking oneself with the Supreme is called yoga, which may\nbe compared to a ladder for attaining the topmost spiritual realization. This\nladder begins from the lowest material condition of the living entity and rises\nup to perfect self-realization in pure spiritual life. According to various\nelevations, different parts of the ladder are known by different names. But all\nin all, the complete ladder is called yoga and may be divided into three parts,\nnamely j\u00ef\u00e4na-yoga, dhy\u00e4na-yoga and bhakti-yoga. The beginning of the ladder\nis called the yog\u00e4ruruk\u00f1a stage, and the highest rung is called yog\u00e4r\u00fc\u00f2ha.\nConcerning the eightfold yoga system, attempts in the beginning to enter into\nmeditation through regulative principles of life and practice of different\nsitting postures (which are more or less bodily exercises) are considered\nfruitive material activities. All such activities lead to achieving perfect mental\nequilibrium to control the senses. When one is accomplished in the practice of\nmeditation, he ceases all disturbing mental activities.\nA K\u00e5\u00f1\u00eba conscious person is, however, situated from the beginning on the\nplatform of meditation because he always thinks of K\u00e5\u00f1\u00eba. And, being\nconstantly engaged in the service of K\u00e5\u00f1\u00eba, he is considered to have ceased all\nmaterial activities.",
+          "type": "Document"
+        },
+        {
+          "id": "2fe23ea9-f906-46b0-92bf-1e9232a3ef36",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 334,
+            "reference": "BG 6.6",
+            "section": "6.6",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "6"
+          },
+          "page_content": "BG 6.6 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his very mind will be the greatest enemy.\n\nPURPORT: The purpose of practicing eightfold yoga is to control the mind in order to\nmake it a friend in discharging the human mission. Unless the mind is\ncontrolled, the practice of yoga (for show) is simply a waste of time. One who\ncannot control his mind lives always with the greatest enemy, and thus his life\nand its mission are spoiled. The constitutional position of the living entity is to\ncarry out the order of the superior. As long as one\u2019s mind remains an\nunconquered enemy, one has to serve the dictations of lust, anger, avarice,\nillusion, etc. But when the mind is conquered, one voluntarily agrees to abide\nby the dictation of the Personality of Godhead, who is situated within the\nheart of everyone as Param\u00e4tm\u00e4. Real yoga practice entails meeting the\nParam\u00e4tm\u00e4 within the heart and then following His dictation. For one who\ntakes to K\u00e5\u00f1\u00eba consciousness directly, perfect surrender to the dictation of the\nLord follows automatically.",
+          "type": "Document"
+        },
+        {
+          "id": "67cb1493-8f4b-4a28-aaed-2476069f68ae",
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 330,
+            "reference": "BG 6.2",
+            "section": "6.2",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "2"
+          },
+          "page_content": "BG 6.2 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: What is called renunciation is the same as yoga, or linking oneself with the Supreme, for no one can become a yog\u00e9 unless he renounces the desire for sense gratification.\n\nPURPORT: Real sanny\u00e4sa-yoga or bhakti means that one should know his\nconstitutional position as the living entity, and act accordingly. The living\nentity has no separate independent identity. He is the marginal energy of the\nSupreme. When he is entrapped by material energy, he is conditioned, and\nwhen he is K\u00e5\u00f1\u00eba conscious, or aware of the spiritual energy, then he is in his\nreal and natural state of life. Therefore, when one is in complete knowledge,\none ceases all material sense gratification, or renounces all kinds of sense\ngratificatory activities. This is practiced by the yog\u00e9s who restrain the senses\nfrom material attachment. But a person in K\u00e5\u00f1\u00eba consciousness has no\nopportunity to engage his senses in anything which is not for the purpose of\nK\u00e5\u00f1\u00eba. Therefore, a K\u00e5\u00f1\u00eba conscious person is simultaneously a sanny\u00e4s\u00e9 and a\nyog\u00e9. The purpose of knowledge and of restraining the senses, as prescribed in\nthe j\u00ef\u00e4na and yoga processes, is automatically served in K\u00e5\u00f1\u00eba consciousness. If\none is unable to give up the activities of his selfish nature, then j\u00ef\u00e4na and yoga\nare of no avail. The real aim is for a living entity to give up all selfish\nsatisfaction and to be prepared to satisfy the Supreme. A K\u00e5\u00f1\u00eba conscious\nperson has no desire for any kind of self-enjoyment. He is always engaged for\nthe enjoyment of the Supreme. One who has no information of the Supreme\nmust therefore be engaged in self-satisfaction because no one can stand on the\nplatform of inactivity. All these purposes are perfectly served by the practice\nof K\u00e5\u00f1\u00eba consciousness.",
+          "type": "Document"
+        },
+        {
+          "metadata": {
+            "chapter": 6,
+            "doc_type": "gita",
+            "page": 357,
+            "reference": "BG 6.26",
+            "section": "6.26",
+            "source": "Bhagavad-gita-As-It-Is.pdf",
+            "title": "S\u00e4\u00eckhya-yoga",
+            "type": "verse",
+            "verse": "26"
+          },
+          "page_content": "BG 6.26 (S\u00e4\u00eckhya-yoga)\n\nTRANSLATION: From whatever and wherever the mind wanders due to its flickering and unsteady nature, one must certainly withdraw it and bring it back under the control of the Self.\n\nPURPORT: The nature of the mind is flickering and unsteady. But a self-realized yog\u00e9\nhas to control the mind; the mind should not control him. One who controls\nthe mind (and therefore the senses as well) is called gosv\u00e4m\u00e9, or sv\u00e4m\u00e9, and one\nwho is controlled by the mind is called god\u00e4sa, or the servant of the senses. A\ngosv\u00e4m\u00e9 knows the standard of sense happiness. In transcendental sense\nhappiness, the senses are engaged in the service of H\u00e5\u00f1\u00e9ke\u00e7a or the supreme\nowner of the senses\u2014K\u00e5\u00f1\u00eba. Serving K\u00e5\u00f1\u00eba with purified senses is called K\u00e5\u00f1\u00eba\nconsciousness. That is the way of bringing the senses under full control. What\nis more, that is the highest perfection of yoga practice.",
+          "type": "Document"
+        }
+      ],
+      "filter": null,
+      "model": null,
+      "provider": "local",
+      "query": "What is yoga?",
+      "question": "What is yoga?",
+      "relevant": true,
+      "tries": 0
+    },
+    "trace_id": "019f3760-756e-79f1-bf7c-159a864c8916",
+    "parent_run_id": null
+  }
+]

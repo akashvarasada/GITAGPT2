@@ -4,8 +4,6 @@ __pycache__/
 .venv/
 venv/
 storage/
-logs/
-traces.json
 .ragas_cache/
 *.tv
 *.tvim
