@@ -74,6 +74,8 @@ class RagService:
         import time
         import uuid
 
+        from langchain_core.callbacks import UsageMetadataCallbackHandler
+
         from app.providers.llm_factory import get_llm
         from app.rag.local_tracer import LocalTracer
         from app.rag.query_log import log_query
@@ -81,6 +83,9 @@ class RagService:
         # One tracer per query -> full per-step span tree in logs/traces.jsonl,
         # shared across the retrieval graph and the generation call.
         tracer = LocalTracer(query_id=uuid.uuid4().hex[:8])
+        # Provider-agnostic token accounting: Ollama attaches usage to streamed
+        # chunks, but Gemini reports it only via callback -- this captures both.
+        usage_cb = UsageMetadataCallbackHandler()
 
         llm = get_llm(provider, api_key, model)   # built once, reused by graph + generation
 
@@ -92,7 +97,7 @@ class RagService:
         parts: list[str] = []
         usage: dict = {}
         meta: dict = {}
-        for chunk in llm.stream(messages, config={"callbacks": [tracer]}):
+        for chunk in llm.stream(messages, config={"callbacks": [tracer, usage_cb]}):
             # chunk.content can be a plain string or a list of content blocks
             # (LangChain 1.x); .text normalizes either shape to plain text.
             text = chunk.text
@@ -108,6 +113,11 @@ class RagService:
             if getattr(chunk, "response_metadata", None):
                 meta = chunk.response_metadata
         t_end = time.perf_counter()
+
+        # Gemini (and any provider that doesn't emit usage on chunks) -> pull the
+        # aggregated token counts the callback collected.
+        if not usage:
+            usage = _usage_from_callback(usage_cb)
 
         from app.rag.local_tracer import write_trace
 
@@ -188,6 +198,15 @@ class RagService:
                     f"Embedding mismatch: index built with '{indexed}' but query "
                     f"uses '{current}'. Re-run build_index or restore the provider."
                 )
+
+
+def _usage_from_callback(cb) -> dict:
+    """Flatten UsageMetadataCallbackHandler.usage_metadata (keyed per model) into
+    the standard {input_tokens, output_tokens} shape the logger expects."""
+    data = getattr(cb, "usage_metadata", None) or {}
+    inp = sum((u.get("input_tokens") or 0) for u in data.values())
+    out = sum((u.get("output_tokens") or 0) for u in data.values())
+    return {"input_tokens": inp, "output_tokens": out} if (inp or out) else {}
 
 
 def _sources(docs) -> list[dict]:
