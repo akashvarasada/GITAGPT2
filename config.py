@@ -69,7 +69,7 @@ class Settings(BaseSettings):
 
     # --- Retrieval ---
     reranker_model: str = "BAAI/bge-reranker-base"
-    retrieve_k: int = 20                 # candidates fetched before rerank
+    retrieve_k: int = 10                 # candidates per arm before rerank (~20 total to rerank)
     top_k: int = 5                       # docs kept after rerank
     # CRAG: if the best rerank score is below this, rewrite the query and retry once.
     rerank_relevance_threshold: float = -3.0

@@ -73,7 +73,17 @@
     #send { flex:0 0 auto; width:34px; height:34px; border-radius:50%; border:none; background:var(--accent);
             color:#fff; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; }
     #send:disabled { opacity:.4; cursor:not-allowed; }
+    #question:disabled { background:transparent; cursor:not-allowed; }
     #hint { text-align:center; font-size:11px; color:var(--muted); margin-top:8px; }
+
+    /* ---------- Warm-up banner ---------- */
+    #warmupBanner { max-width:720px; margin:0 auto 10px; padding:9px 14px; border-radius:12px;
+                    background:#fdf1ea; border:1px solid #f0c9b5; color:var(--accent);
+                    font-size:13px; display:flex; align-items:center; gap:9px; }
+    #warmupBanner.error { background:#fdeaea; border-color:#f0b5b5; color:#b02525; }
+    #warmupBanner .spin { width:13px; height:13px; flex:0 0 auto; border:2px solid #e0b4a0;
+                          border-top-color:var(--accent); border-radius:50%; animation:spin .8s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
   </style>
 </head>
 <body>
@@ -122,6 +132,10 @@
     </div>
 
     <div id="composer">
+      <div id="warmupBanner">
+        <span class="spin"></span>
+        <span id="warmupText">Warming up the system — loading models. You can ask once this is ready…</span>
+      </div>
       <div id="composerInner">
         <textarea id="question" rows="1" placeholder="Message GITAGPT..."></textarea>
         <button id="send" title="Send">➤</button>
@@ -132,6 +146,40 @@
 
   <script>
     const $ = (id) => document.getElementById(id);
+
+    // ---------- System readiness (warm-up gate) ----------
+    let systemReady = false;
+
+    function setReady(ready, error) {
+      systemReady = ready;
+      $("send").disabled = !ready;
+      $("question").disabled = !ready;
+      if (ready) {
+        $("warmupBanner").classList.add("hidden");
+        $("question").placeholder = "Message GITAGPT...";
+        $("question").focus();
+      } else if (error) {
+        $("warmupBanner").classList.add("error");
+        $("warmupBanner").querySelector(".spin")?.remove();
+        $("warmupText").textContent = "Startup failed: " + error;
+        $("question").placeholder = "System unavailable";
+      }
+    }
+
+    async function pollReady() {
+      try {
+        const d = await (await fetch("/ready")).json();
+        if (d.ready) return setReady(true);
+        if (d.error) return setReady(false, d.error);
+      } catch (e) { /* server still coming up; keep polling */ }
+      setTimeout(pollReady, 1000);
+    }
+
+    // Start gated: composer disabled until /ready reports the models are loaded.
+    $("send").disabled = true;
+    $("question").disabled = true;
+    $("question").placeholder = "Warming up…";
+    pollReady();
 
     function updateProviderLabel() {
       $("providerLabel").textContent = $("provider").selectedOptions[0].textContent;
@@ -200,6 +248,7 @@
     }
 
     async function sendMessage() {
+      if (!systemReady) return;
       const text = $("question").value.trim();
       if (!text) return;
       $("question").value = "";
@@ -235,7 +284,7 @@
       } catch (e) {
         bubble.textContent = "Request failed: " + e;
       } finally {
-        $("send").disabled = false;
+        $("send").disabled = !systemReady;
       }
     }
 

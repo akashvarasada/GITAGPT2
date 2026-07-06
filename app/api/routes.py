@@ -20,14 +20,26 @@ templates = Jinja2Templates(directory=str(ROOT / "app" / "ui" / "templates"))
 
 
 def _get_rag(request: Request):
-    """Lazily build and cache the RagService (loads embeddings + index)."""
-    rag = getattr(request.app.state, "rag", None)
-    if rag is None:
-        from app.rag.service import RagService
+    """Return the cached RagService. Normally built by the startup warm-up thread;
+    if a request beats it (or warm-up was skipped), build under a lock so we never
+    construct two copies. Blocks until the in-flight warm-up finishes."""
+    app = request.app
+    rag = getattr(app.state, "rag", None)
+    if rag is not None:
+        return rag
+    lock = getattr(app.state, "rag_lock", None)
+    if lock is None:
+        import threading
+        lock = app.state.rag_lock = threading.Lock()
+    with lock:
+        if getattr(app.state, "rag", None) is None:
+            from app.rag.service import RagService
 
-        rag = RagService()
-        request.app.state.rag = rag
-    return rag
+            rag = RagService()
+            rag.warmup()
+            app.state.rag = rag
+            app.state.rag_ready = True
+        return app.state.rag
 
 
 def _get_config(request: Request) -> dict:
@@ -48,6 +60,14 @@ def index(request: Request):
 @router.get("/health")
 def health():
     return {"status": "ok", "embed": settings.embed_model, "backend": settings.vector_backend}
+
+
+@router.get("/ready")
+def ready(request: Request):
+    """UI polls this to know when the warm-up thread has models loaded."""
+    st = request.app.state
+    return {"ready": bool(getattr(st, "rag_ready", False)),
+            "error": getattr(st, "rag_error", None)}
 
 
 @router.post("/config")

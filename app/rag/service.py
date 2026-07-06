@@ -95,9 +95,12 @@ class RagService:
 
         first_token_t = None
         parts: list[str] = []
-        usage: dict = {}
         meta: dict = {}
+        full = None   # accumulated message -> correct aggregated usage_metadata
         for chunk in llm.stream(messages, config={"callbacks": [tracer, usage_cb]}):
+            # Sum chunks: Gemini emits usage_metadata INCREMENTALLY (the final chunk
+            # is 0/0), so a single chunk's usage is never the total -- accumulate.
+            full = chunk if full is None else full + chunk
             # chunk.content can be a plain string or a list of content blocks
             # (LangChain 1.x); .text normalizes either shape to plain text.
             text = chunk.text
@@ -106,18 +109,15 @@ class RagService:
                     first_token_t = time.perf_counter()   # prefill ends here
                 parts.append(text)
                 yield {"type": "token", "text": text}
-            # Token counts / native timings arrive on the "done" chunk, which is
-            # NOT necessarily the last one -- capture whenever present.
-            if getattr(chunk, "usage_metadata", None):
-                usage = chunk.usage_metadata
+            # Ollama's engine durations (prompt_eval_duration, etc.) arrive on the
+            # "done" chunk's response_metadata -- capture whenever present.
             if getattr(chunk, "response_metadata", None):
                 meta = chunk.response_metadata
         t_end = time.perf_counter()
 
-        # Gemini (and any provider that doesn't emit usage on chunks) -> pull the
-        # aggregated token counts the callback collected.
-        if not usage:
-            usage = _usage_from_callback(usage_cb)
+        # Token counts: the callback aggregates correctly across providers; fall back
+        # to the accumulated message's usage_metadata.
+        usage = _usage_from_callback(usage_cb) or (getattr(full, "usage_metadata", None) or {})
 
         from app.rag.local_tracer import write_trace
 
