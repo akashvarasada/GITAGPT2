@@ -59,6 +59,38 @@ python -m eval.evaluate --limit 3
 Reports retrieval Hit@k plus RAGAS Faithfulness / Answer Relevancy / Context
 Precision / Context Recall. Re-run after changing chunking, embeddings, or model.
 
+## Observability
+
+Every query made through the UI is logged to `logs/queries.jsonl` (one JSON line
+per query) with a matching one-line console summary. Fields include `retrieval_s`,
+`prefill_s`/`decode_s` (wall-clock), `prompt_tokens`/`completion_tokens`,
+`prefill_tok_per_s`/`decode_tok_per_s` (throughput), and Ollama's engine-measured
+`ollama_prefill_s`/`ollama_decode_s` (authoritative -- wall-clock can be skewed by
+client-side stream buffering, so throughput is computed from engine timing when available).
+
+Tail it live:
+```bash
+tail -f logs/queries.jsonl
+```
+
+### Native span-tree tracing (no cloud)
+
+`logs/traces.jsonl` records a LangSmith-style **per-step span tree** for every query
+-- each LangGraph node, retriever, and LLM call as a nested span with its exact
+inputs, outputs, and latency. This is produced by a local `BaseTracer` subclass
+([app/rag/local_tracer.py](app/rag/local_tracer.py)) attached as a LangChain callback,
+so it works fully offline. API keys are redacted before writing. Group a single
+query's spans by their shared `query_id`.
+
+### LangSmith (optional cloud)
+
+If `LANGSMITH_*` is set in `.env`, the same traces also go to the LangSmith UI.
+Export recent cloud traces to a file for offline analysis:
+```bash
+python -m eval.export_traces --limit 20      # -> traces.json
+```
+(Note: `logs/traces.jsonl` = native local tracer; `traces.json` = pulled from LangSmith.)
+
 ## Layout
 ```
 app/ingest   parse + chunk-router + build_index

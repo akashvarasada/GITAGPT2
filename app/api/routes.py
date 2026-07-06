@@ -37,8 +37,10 @@ def _get_config(request: Request) -> dict:
 
 @router.get("/")
 def index(request: Request):
+    from app.providers.llm_factory import list_ollama_models
+
     return templates.TemplateResponse(request, "index.html", {
-        "ollama_display": settings.ollama_display,
+        "ollama_models": list_ollama_models(),       # all installed local models
         "gemini_display": settings.gemini_display,
     })
 
@@ -54,7 +56,12 @@ def set_config(cfg: ConfigRequest, request: Request):
         return {"ok": False, "error": "Gemini requires an API key."}
     request.app.state.config = cfg.model_dump()
     # Never echo the key back.
-    model = settings.gemini_display if cfg.provider == "gemini" else settings.ollama_display
+    from app.providers.llm_factory import describe_ollama_model
+
+    if cfg.provider == "gemini":
+        model = settings.gemini_display
+    else:
+        model = cfg.model or describe_ollama_model()
     return {"ok": True, "provider": cfg.provider, "model": model}
 
 
@@ -69,6 +76,7 @@ def chat(req: ChatRequest, request: Request):
                 req.question,
                 provider=cfg.get("provider"),
                 api_key=cfg.get("api_key"),
+                model=cfg.get("model"),
             ):
                 yield f"data: {json.dumps(event)}\n\n"
         except Exception as exc:  # surface errors to the UI instead of hanging

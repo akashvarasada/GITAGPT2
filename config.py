@@ -8,10 +8,16 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from dotenv import load_dotenv
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Project root = folder containing this file.
 ROOT = Path(__file__).resolve().parent
+
+# pydantic-settings below only parses .env for its OWN declared fields below --
+# it does not push values into the real process environment. Some libraries
+# (e.g. LangSmith tracing) read os.environ directly, so we load .env for real too.
+load_dotenv(ROOT / ".env")
 
 
 class Settings(BaseSettings):
@@ -19,8 +25,7 @@ class Settings(BaseSettings):
 
     # --- LLM provider ---
     llm_provider: str = "local"          # "local" | "gemini"
-    ollama_model: str = "gemma4:12b-mlx"  # model name used in the Ollama API in mac
-    ollama_display: str = "Gemma 4"      # human-readable label shown in the UI
+    ollama_model: str = "auto"           # "auto" = pick an installed Ollama model
     ollama_base_url: str = "http://localhost:11434"
     gemini_model: str = "gemini-3-flash-preview"
     gemini_display: str = "3 Flash Preview"

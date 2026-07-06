@@ -86,8 +86,12 @@
       <div id="providerPanel">
         <label for="provider">LLM</label>
         <select id="provider">
-          <option value="local">Local ({{ ollama_display }})</option>
-          <option value="gemini">Gemini ({{ gemini_display }})</option>
+          {% for m in ollama_models %}
+          <option value="local::{{ m }}" data-provider="local" data-model="{{ m }}">Local ({{ m }})</option>
+          {% else %}
+          <option value="none" data-provider="local" disabled>No local models installed</option>
+          {% endfor %}
+          <option value="gemini" data-provider="gemini">Gemini ({{ gemini_display }})</option>
         </select>
 
         <div id="keyWrap" class="hidden">
@@ -101,7 +105,7 @@
 
       <button id="providerBtn">
         <span class="dot"></span>
-        <span class="label" id="providerLabel">Local ({{ ollama_display }})</span>
+        <span class="label" id="providerLabel">Select model</span>
         <span class="chevron">▾</span>
       </button>
     </div>
@@ -141,13 +145,21 @@
       if (!$("providerBox").contains(e.target)) $("providerPanel").classList.remove("open");
     });
 
+    function selectedProvider() {
+      return $("provider").selectedOptions[0]?.dataset.provider || "local";
+    }
+    function selectedModel() {
+      return $("provider").selectedOptions[0]?.dataset.model || null;
+    }
+
     $("provider").addEventListener("change", () => {
-      $("keyWrap").classList.toggle("hidden", $("provider").value !== "gemini");
+      $("keyWrap").classList.toggle("hidden", selectedProvider() !== "gemini");
     });
 
     $("saveCfg").addEventListener("click", async () => {
       const body = {
-        provider: $("provider").value,
+        provider: selectedProvider(),
+        model: selectedModel(),
         api_key: $("apiKey").value || null,
       };
       const r = await fetch("/config", {

@@ -16,7 +16,6 @@ from langchain_core.documents import Document
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.graph import END, StateGraph
 
-from app.providers.llm_factory import get_llm
 from app.rag import prompts
 from app.rag.reranker import rerank
 from app.rag.retriever import HybridRetriever
@@ -26,14 +25,15 @@ from config import settings
 class RagState(TypedDict, total=False):
     question: str
     query: str                 # current search query (may be rewritten)
-    provider: str
-    api_key: str | None
-    model: str | None
     filter: dict | None
     documents: list[Document]
     context: str
     tries: int
     relevant: bool
+
+    # NOTE: the API key is deliberately NOT part of the state. State becomes the
+    # traced `inputs` of every step (local AND cloud tracers), so putting secrets
+    # here leaks them. The LLM is injected via config["configurable"]["llm"].
 
 
 def build_graph(retriever: HybridRetriever):
@@ -53,8 +53,9 @@ def build_graph(retriever: HybridRetriever):
             return "finalize"
         return "rewrite"
 
-    def rewrite(state: RagState) -> RagState:
-        llm = get_llm(state.get("provider"), state.get("api_key"), state.get("model"))
+    def rewrite(state: RagState, config) -> RagState:
+        # LLM comes from config (not state) so the API key never enters traced inputs.
+        llm = config["configurable"]["llm"]
         msg = llm.invoke([
             SystemMessage(content=prompts.REWRITE_SYSTEM),
             HumanMessage(content=state["question"]),
