@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     # --- LLM provider ---
-    llm_provider: str = "local"          # "local" | "gemini"
+    llm_provider: str = "gemini"         # "local" | "gemini"  (default switched to Gemini)
     ollama_model: str = "auto"           # "auto" = pick an installed Ollama model
     ollama_base_url: str = "http://localhost:11434"
     # How long Ollama keeps the model resident after a request. Default (5m) lets
@@ -81,6 +81,20 @@ class Settings(BaseSettings):
     # --- Docs ---
     docs_dir: str = "Docs"
 
+    # --- Garak security scanner ---
+    # garak (github.com/NVIDIA/garak) probes the LLM/RAG for jailbreaks, prompt
+    # injection, data leakage etc. It runs as a subprocess and talks to the app
+    # via garak's REST generator, which POSTs to the URL below. That endpoint
+    # routes through get_llm(), so ANY provider/model the app supports is
+    # scannable -- raw LLM or the full RAG pipeline.
+    garak_target_url: str = "http://127.0.0.1:8000/garak/generate"
+    garak_generations: int = 1           # attempts per probe prompt (1 = fast smoke scan)
+    # Per-request HTTP timeout garak waits for /garak/generate. RAG-mode calls
+    # run the full pipeline (~35-45s each) and Gemini can stall on adversarial
+    # prompts, so this is generous. A single call exceeding it aborts the whole
+    # garak run (garak doesn't retry read-timeouts), so err high.
+    garak_request_timeout: int = 300
+
     # Absolute-path helpers -------------------------------------------------
     @property
     def chroma_path(self) -> Path:
@@ -89,6 +103,10 @@ class Settings(BaseSettings):
     @property
     def docs_path(self) -> Path:
         return ROOT / self.docs_dir
+
+    @property
+    def garak_dir(self) -> Path:
+        return ROOT / "storage" / "garak"
 
 
 settings = Settings()

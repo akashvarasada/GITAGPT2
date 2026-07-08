@@ -39,3 +39,6 @@ python-dotenv>=1.0.0
 # --- Evaluation (opt-in) ---
 # ragas>=0.2.0
 langsmith>=0.9.0                   # tracing for the LangGraph pipeline (set LANGSMITH_* in .env)
+
+# --- Security scanning ---
+garak>=0.9.0                       # LLM/RAG vulnerability scanner (NVIDIA); runs via the /garak UI

@@ -12,3 +12,18 @@ class ConfigRequest(BaseModel):
 
 class ChatRequest(BaseModel):
     question: str
+
+
+class GarakGenerateRequest(BaseModel):
+    """Body garak's REST generator POSTs to /garak/generate."""
+    prompt: str = ""
+
+
+class GarakRunRequest(BaseModel):
+    """Kick off a garak scan against a chosen provider/model."""
+    provider: str = "gemini"          # "local" | "gemini"
+    api_key: str | None = None        # required for gemini
+    model: str | None = None          # model tag/name (local tag or gemini model)
+    mode: str = "raw"                 # "raw" (LLM only) | "rag" (full pipeline)
+    probes: list[str] = []            # garak probe specs; empty -> promptinject
+    generations: int = 1              # attempts per probe prompt
